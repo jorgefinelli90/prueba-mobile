@@ -1,0 +1,579 @@
+.copete-tittle {
+  font-family: $tipografiaPrimaria;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 32px;
+  color: $grisTextos;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 0px;
+    font-family: $tipografiaPrimaria;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: $blancoTitulos;
+    text-shadow: $shadowText;
+    text-align: center;
+  }
+
+  h2 {
+    padding-bottom: 20px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 32px;
+    text-align: center;
+    color: $grisTextos;
+  }
+}
+
+#portada {
+  background-color: $backgroundDark;
+  padding-top: 80px;
+
+  .flecha-abajo {
+    padding-top: 60px;
+
+    .icono-abajo {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      margin: auto;
+      color: $grisTextos;
+    }
+  }
+}
+
+.blocks-h {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .block-h-left,
+  .block-h-right {
+    width: 426px;
+    height: 162px;
+    border-radius: 8px;
+    margin: 5px 10px 5px 23px;
+
+    a {
+      text-decoration: none;
+      color: $backgroundDark;
+    }
+
+    h3 {
+      font-family: $tipografiaPrimaria;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 32px;
+      margin: 40px 0 10px 30px;
+    }
+
+    p {
+      font-family: $tipografiaPrimaria;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      margin: 0 0 0 30px;
+    }
+
+    svg {
+      width: 32px;
+      height: 32px;
+      margin: 10px 0 0 362px;
+    }
+  }
+
+  .block-h-left {
+    background-color: $rojo;
+  }
+
+  .block-h-right {
+    background-color: $azul;
+  }
+}
+
+/* portadas estilos hover */
+
+.block-h-left:hover {
+  background-color: $backgroundDark;
+  border: solid 2px $rojo;
+
+  h3,
+  p,
+  svg {
+    color: $rojo;
+  }
+}
+
+.block-h-right:hover {
+  background-color: $backgroundDark;
+  border: solid 2px $azul;
+
+  h3,
+  p,
+  svg {
+    color: $azul;
+  }
+}
+
+/* secciones */
+
+#section-1 {
+  background-color: $backgroundDark;
+  padding-top: 50px;
+
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  h4 {
+    color: $rojo;
+    font-family: $tipografiaPrimaria;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .h5-largo {
+    width: 611px;
+    height: 54px;
+  }
+
+  h5 {
+    color: $grisTextos;
+    width: 173px;
+    height: 80px;
+    font-family: $tipografiaPrimaria;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .tittle-section {
+    h1 {
+      text-align: left;
+      margin-left: 10vw;
+      color: $blancoTitulos;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+    }
+    p {
+      margin-left: 10vw;
+      font-family: $tipografiaPrimaria;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 32px;
+      color: $grisTextos;
+      max-width: 872px;
+      height: 96px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+
+  .tarj-section {
+    display: flex;
+    margin-left: 10vw;
+    flex-wrap: wrap;
+  }
+
+  .div-s-largo {
+    margin: 10px 10px 10px 0;
+    width: 50vw;
+    height: 230px;
+    border: 1px solid #fc466b;
+    border-radius: 8px;
+
+    svg {
+      margin: 40px 20px 0;
+    }
+
+    h4 {
+      margin: 10px 20px 0;
+    }
+
+    .h5-largo {
+      margin: 10px 20px 0;
+      width: 48vw;
+    }
+  }
+
+  .div-s-corto {
+    margin: 10px 10px 10px 0;
+    width: 204px;
+    height: 230px;
+    border: 1px solid #fc466b;
+    border-radius: 8px;
+
+    svg {
+      margin: 40px 20px 0;
+    }
+
+    h4 {
+      margin: 10px 20px 0;
+    }
+
+    h5 {
+      margin: 10px 20px 0;
+    }
+  }
+}
+
+#section-2 {
+  background-color: $backgroundDark;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  h4 {
+    color: $azul;
+    font-family: $tipografiaPrimaria;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .h5-largo {
+    width: 611px;
+    height: 54px;
+  }
+
+  h5 {
+    color: $grisTextos;
+    width: 173px;
+    height: 80px;
+    font-family: $tipografiaPrimaria;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .tittle-section {
+    h1 {
+      text-align: left;
+      margin-left: 10vw;
+      color: $blancoTitulos;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+    }
+    p {
+      margin-left: 10vw;
+      font-family: $tipografiaPrimaria;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 32px;
+      color: $grisTextos;
+      max-width: 872px;
+      height: 96px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+
+  .tarj-section {
+    display: flex;
+    margin-left: 10vw;
+    flex-wrap: wrap;
+
+    .div-s-largo {
+      margin: 10px 10px 10px 0;
+      width: 50vw;
+      height: 230px;
+      border: 1px solid $azul;
+      border-radius: 8px;
+
+      svg {
+        margin: 40px 20px 0;
+      }
+
+      h4 {
+        margin: 10px 20px 0;
+      }
+
+      .h5-largo {
+        margin: 10px 20px 0;
+        width: 48vw;
+      }
+    }
+  }
+
+  .div-s-corto {
+    margin: 10px 10px 10px 0;
+    width: 204px;
+    height: 230px;
+    border: 1px solid $azul;
+    border-radius: 8px;
+
+    svg {
+      margin: 40px 20px 0;
+    }
+
+    h4 {
+      margin: 10px 20px 0;
+    }
+
+    h5 {
+      margin: 10px 20px 0;
+    }
+  }
+}
+
+.sector {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  background-color: $backgroundDark;
+
+  #div-plataformas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 78vw;
+    height: 80px;
+    background-color: $backgroundPlataformas;
+    border-radius: 8px;
+
+    .plataformas {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+
+      img {
+        height: 33px;
+      }
+    }
+  }
+}
+
+/* ------------------------------------------------- */
+
+/* empresas - clientes */
+
+#clientes {
+  .tittle-clientes {
+    h1 {
+      margin: 80px 0 50px 8.5vw;
+      width: 600px;
+      height: 56px;
+      font-family: $tipografiaPrimaria;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+      color: $backgroundDark;
+      text-shadow: none;
+    }
+  }
+
+  #clientes-section {
+    margin-left: 13vw;
+    width: 81vw;
+
+    .clientes-carrousel {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    .empresa {
+      margin: 5px;
+      width: 203px;
+      height: 230px;
+      background-color: $backgroundDark;
+      border-radius: 8px;
+
+      .logo-emp {
+        height: 90px;
+
+        img {
+          padding-top: 40px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+        }
+      }
+
+      h4 {
+        font-family: $tipografiaPrimaria;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        color: #ffffff;
+        margin: 25px 0 0 0;
+        padding: 0;
+      }
+
+      h5 {
+        font-family: $tipografiaPrimaria;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+        color: $grisTextos;
+        margin: 8px 0 0 0;
+        padding: 0;
+      }
+    }
+
+    .flecha-empresas {
+      background-color: $backgroundDark;
+      border-radius: 50px;
+      width: 50px;
+      height: 50px;
+      margin-top: 90px;
+      margin-right: 20px;
+      margin-left: 50px;
+
+      svg {
+        width: 32px;
+        height: 32px;
+        color: $blancoTitulos;
+        margin: 8px;
+      }
+    }
+  }
+}
+
+.cont {
+  margin-top: 45px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacto-clientes {
+  width: 1097px;
+  height: 80px;
+  border-radius: 8px;
+  background-color: $backgroundPlataformas;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+
+  .asside-contact {
+    display: flex;
+
+    svg {
+      margin: auto 0 auto 40px;
+      width: 32px;
+      height: 32px;
+      color: $rojo;
+    }
+
+    p {
+      margin-left: 15px;
+      font-family: $tipografiaPrimaria;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      color: $rojo;
+    }
+
+    .blue-contact {
+      margin-left: 10px;
+      font-family: $tipografiaPrimaria;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: $grisTextos;
+    }
+  }
+}
+
+.button:after {
+  background: #252525;
+}
+
+.ctn {
+  margin-left: 14vw;
+  display: block;
+  text-align: center;
+}
+
+.b-green,
+.b-green:before {
+  background: linear-gradient(45deg, #fc466b 0, #5f79ff 100%);
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 16px 24px;
+  margin: 0.5em;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  transition: all 0.5s;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button:hover {
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0.75);
+}
+
+.button:hover:after {
+  left: 100%;
+  top: 100%;
+  bottom: 100%;
+  right: 100%;
+}
+
+.button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 6px;
+  transition: all 0.5s;
+}
+
+.button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  bottom: 2px;
+  right: 2px;
+  z-index: -1;
+  border-radius: 6px;
+  transition: all 0.5s;
+}
