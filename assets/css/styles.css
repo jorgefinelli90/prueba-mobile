@@ -724,12 +724,12 @@ footer .footer-up .legales {
   align-items: center;
   background-color: #090909;
 }
-footer .footer-up .legales img {
-  margin-right: 25px;
-  width: 21.25px;
-  height: 36px;
+footer .footer-up .legales .data-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-footer .footer-up .legales p {
+footer .footer-up .legales .data-footer p {
   color: #fff;
   font-family: "Montserrat";
   font-style: normal;
@@ -737,9 +737,14 @@ footer .footer-up .legales p {
   font-size: 14px;
   line-height: 17px;
 }
-footer .footer-up .legales .g-text {
+footer .footer-up .legales .data-footer .g-text {
   padding: 0 30px;
   color: rgba(153, 153, 153, 0.6);
+}
+footer .footer-up .legales img {
+  margin-right: 25px;
+  width: 21.25px;
+  height: 36px;
 }
 footer #datos-contacto {
   border-top: solid 1px rgba(153, 153, 153, 0.2862745098);
@@ -755,6 +760,10 @@ footer #datos-contacto .info {
   align-items: center;
   color: #999999;
 }
+footer #datos-contacto .info .datos-info {
+  display: flex;
+  align-items: center;
+}
 footer #datos-contacto .info svg {
   margin-left: 25px;
   width: 24px;
@@ -765,13 +774,13 @@ footer #datos-contacto .info p {
   margin-left: 1vw;
   color: rgba(255, 255, 255, 0.792);
 }
-footer #datos-contacto .rrss {
+footer .rrss {
   display: flex;
   flex-direction: row;
   align-items: center;
   color: #FFF;
 }
-footer #datos-contacto .rrss svg {
+footer .rrss svg {
   width: 32px;
   height: 32px;
   margin: 0px 10px;
@@ -1064,5 +1073,77 @@ footer #datos-contacto .rrss svg {
     margin: 6px;
     display: block;
     text-align: center;
+  }
+  /* footer legales */
+  footer .footer-up .legales {
+    padding: 0px;
+    width: 100%;
+    height: 87px;
+    display: flex;
+    background-color: #090909;
+  }
+  footer .footer-up .legales .data-footer {
+    display: block;
+  }
+  footer .footer-up .legales .data-footer p {
+    margin: 5px 0 0 0;
+    color: #fff;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  footer .footer-up .legales .data-footer .g-text {
+    width: 90%;
+    padding: 0;
+    color: rgba(153, 153, 153, 0.6);
+  }
+  footer .footer-up .legales img {
+    margin-right: 10px;
+    margin-left: 16px;
+    width: 21.25px;
+    height: 36px;
+  }
+  footer #datos-contacto {
+    border-top: solid 1px rgba(153, 153, 153, 0.2862745098);
+    height: 245px;
+    background-color: #090909;
+    display: block;
+    padding: 0;
+  }
+  footer #datos-contacto .info {
+    display: block;
+    color: #999999;
+    width: 270px;
+    height: 148px;
+    margin: 0 6vw;
+  }
+  footer #datos-contacto .info .datos-info {
+    display: flex;
+    align-items: center;
+  }
+  footer #datos-contacto .info svg {
+    margin-left: 25px;
+    width: 24px;
+    height: 24px;
+    color: #999999;
+  }
+  footer #datos-contacto .info p {
+    font-size: 14px;
+    margin-left: 1vw;
+    color: rgba(255, 255, 255, 0.792);
+  }
+  footer .rrss {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #FFF;
+  }
+  footer .rrss svg {
+    width: 32px;
+    height: 32px;
+    margin: 0px 10px;
   }
 }/*# sourceMappingURL=styles.css.map */

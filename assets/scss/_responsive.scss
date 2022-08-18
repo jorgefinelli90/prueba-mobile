@@ -197,9 +197,6 @@
         #clientes-section {
             margin-left: 0;
             width: 100%;
-
-            .clientes-carrousel {}
-
             .empresa {
                 margin: 5px;
                 width: 156px;
@@ -317,5 +314,90 @@
             display: block;
             text-align: center;
           }
+    }
+
+
+/* footer legales */
+footer {
+    .footer-up {
+        .legales {
+            padding: 0px;
+            width: 100%;
+            height: 87px;
+            display: flex;
+            background-color: #090909;
+            .data-footer{
+                display: block;
+                p {
+                    margin: 5px 0 0 0;
+                    color: #fff;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+                .g-text {
+                    width: 90%;
+                    padding: 0;
+                    color: #9999;
+                }
+            }
+
+            img {
+                margin-right: 10px;
+                margin-left: 16px;
+                width: 21.25px;
+                height: 36px;
+            }
+        }
+    }
+
+    #datos-contacto {
+        border-top: solid 1px #99999949;
+        height: 245px;
+        background-color: #090909;
+        display: block;
+        padding: 0;
+        .info {
+            display: block;
+            color: $grisFooter;
+            width: 270px;
+            height: 148px;
+            margin: 0 6vw;
+            .datos-info {
+                display: flex;
+                align-items: center;
+            }
+                svg {
+                    margin-left: 25px;
+                    width: 24px;
+                    height: 24px;
+                    color: $grisFooter;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin-left: 1vw;
+                    color: rgba(255, 255, 255, 0.792);
+                }
+            }
+
+        }
+
+        .rrss {
+            padding-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: #FFF;
+
+            svg {
+                width: 32px;
+                height: 32px;
+                margin: 0px 10px;
+            }
+
+        }
     }
 }

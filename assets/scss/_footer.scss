@@ -1,60 +1,79 @@
-footer{
-    .footer-up{
-        .legales{
+footer {
+    .footer-up {
+        .legales {
             padding-left: 12.5vw;
             width: 100%;
             height: 78px;
             display: flex;
             align-items: center;
-            background-color:  #090909;
-            img{
-                margin-right: 25px; 
+            background-color: #090909;
+            .data-footer{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p {
+                    color: #fff;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+    
+                .g-text {
+                    padding: 0 30px;
+                    color: #9999;
+                }
+            }
+
+            img {
+                margin-right: 25px;
                 width: 21.25px;
                 height: 36px;
             }
-            p{  
-                color: #fff;
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 17px;
-            }
-            .g-text{
-                padding: 0 30px;
-                color: #9999;
-            }
         }
     }
-    #datos-contacto{
+
+    #datos-contacto {
         border-top: solid 1px #99999949;
         height: 62px;
         background-color: #090909;
         display: flex;
         justify-content: space-around;
         padding: 1vh 4vw;
-        .info{
+
+        .info {
             display: flex;
             flex-direction: row;
             align-items: center;
             color: $grisFooter;
-            svg{
-                margin-left: 25px;
-                width: 24px;
-                height: 24px;
-                color: $grisFooter;
+
+            .datos-info {
+                display: flex;
+                align-items: center;
             }
-            p{
-                margin-left: 1vw;
-                color: rgba(255, 255, 255, 0.792);
+                svg {
+                    margin-left: 25px;
+                    width: 24px;
+                    height: 24px;
+                    color: $grisFooter;
+                }
+
+                p {
+                    margin-left: 1vw;
+                    color: rgba(255, 255, 255, 0.792);
+                }
             }
+
         }
-        .rrss{
+
+        .rrss {
             display: flex;
             flex-direction: row;
             align-items: center;
             color: #FFF;
-            svg{
+
+            svg {
                 width: 32px;
                 height: 32px;
                 margin: 0px 10px;
@@ -63,4 +82,3 @@ footer{
         }
     }
 
-}
