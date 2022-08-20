@@ -10,7 +10,277 @@
             }
         }
     }
+
+    #section-1,
+    #section-2 {
+        .tittle-section {
+            h1 {
+                font-family: $tipografiaPrimaria;
+                color: #ffff;
+                text-align: center;
+                margin: 0px;
+                font-size: 30px;
+            }
+
+            p {
+                margin-top: 0px;
+                width: 90%;
+                text-align: center;
+                margin-left: 5vw;
+                font-family: "Montserrat", sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 20px;
+                color: #d0d0d0;
+            }
+        }
+
+        .tarj-section {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+
+            .div-s-largo {
+                margin: 10px 10px 10px 0;
+                width: 80vw;
+                height: 245px;
+                border: 1px solid #fc466b;
+                border-radius: 8px;
+
+                svg {
+                    margin: 30px 20px 0;
+                }
+
+                h4 {
+                    margin: 10px 20px 0;
+                }
+
+                .h5-largo {
+                    margin: 10px 20px 0;
+                    width: 72vw;
+                }
+            }
+            .div-s-corto {
+                margin: 10px 10px 10px 0;
+                width: 39.5vw;
+                height: 260px;
+                border: 1px solid #fc466b;
+                border-radius: 8px;
+
+                svg {
+                    margin: 30px 20px 0;
+                }
+
+                h4 {
+                    margin: 10px 20px 0;
+                }
+
+                h5 {
+                    width: 33vw;
+                    margin: 10px 20px 0;
+                }
+            }
+        }
+    }
+    #section-2 .tarj-section .div-s-corto, #section-2 .tarj-section .div-s-largo {
+        border: 1px solid $azul;
+    }
+    /* prueba */
+    .prueba{
+        display: block;
+    }
+    .flecha-empresas{
+        display: none;
+    }
+
+    .sector {
+        #div-plataformas {
+            width: 79vw;
+            height: 190px;
+            background-color: $backgroundPlataformas;
+            border-radius: 8px;
+
+            .plataformas {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-content: center;
+
+                img {
+                    margin: 6px 25px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+
+    #clientes {
+        .tittle-clientes {
+            h1 {
+                width: 100%;
+                text-align: center;
+                padding: 0px;
+                margin: 30px 0 20px 80px;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 56px;
+                color: #1D1D1D;
+            }
+        }
+    }
+
+    .cont {
+        margin-top: 45px;
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacto-clientes {
+        width: 80%;
+        height: 200px;
+        border-radius: 8px;
+        background-color: $backgroundPlataformas;
+        display: block;
+        align-items: center;
+        z-index: 3;
+
+        .asside-contact {
+            display: block;
+
+            svg {
+                margin: 24px 0px 8px 40vw;
+                width: 24px;
+                height: 24px;
+                color: $rojo;
+            }
+
+            p {
+                margin: 0;
+                text-align: center;
+                font-family: $tipografiaPrimaria;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                color: $rojo;
+            }
+
+            .blue-contact {
+                margin-top: 5px;
+                text-align: center;
+                font-family: $tipografiaPrimaria;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: $grisTextos;
+            }
+        }
+
+        .ctn {
+            margin: 6px;
+            display: block;
+            text-align: center;
+        }
+    }
+
+    footer {
+        .footer-up {
+            .legales {
+                padding: 0px;
+                width: 100%;
+                height: 87px;
+                display: flex;
+                background-color: #090909;
+
+                .data-footer {
+                    display: block;
+
+                    p {
+                        margin: 5px 0 0 0;
+                        color: #fff;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+
+                    .g-text {
+                        width: 90%;
+                        padding: 0;
+                        color: #9999;
+                    }
+                }
+
+                img {
+                    margin-right: 10px;
+                    margin-left: 16px;
+                    width: 21.25px;
+                    height: 36px;
+                }
+            }
+        }
+
+        #datos-contacto {
+            border-top: solid 1px #99999949;
+            height: 245px;
+            background-color: #090909;
+            display: block;
+            padding: 0;
+
+            .info {
+                display: flex;
+                color: #999999;
+                width: 90%;
+                height: 148px;
+                margin: 0 6vw;
+                justify-content: space-around;
+                flex-wrap: wrap;
+
+                .datos-info {
+                    display: flex;
+                    align-items: center;
+                }
+
+                svg {
+                    margin-left: 25px;
+                    width: 24px;
+                    height: 24px;
+                    color: $grisFooter;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin-left: 1vw;
+                    color: rgba(255, 255, 255, 0.792);
+                }
+            }
+
+        }
+
+        .rrss {
+            padding-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: #FFF;
+
+            svg {
+                width: 32px;
+                height: 32px;
+                margin: 0px 10px;
+            }
+
+        }
+    }
+        
 }
+
+
 
 /* mobile */
 @media (max-width: 380px) {
@@ -199,6 +469,7 @@
         #clientes-section {
             margin-left: 0;
             width: 100%;
+
             .empresa {
                 margin: 5px;
                 width: 156px;
@@ -282,6 +553,7 @@
 
         .asside-contact {
             display: block;
+
             svg {
                 margin: 24px 0px 8px 40vw;
                 width: 24px;
@@ -290,7 +562,7 @@
             }
 
             p {
-                margin:0;
+                margin: 0;
                 text-align: center;
                 font-family: $tipografiaPrimaria;
                 font-style: normal;
@@ -311,66 +583,73 @@
                 color: $grisTextos;
             }
         }
+
         .ctn {
             margin: 6px;
             display: block;
             text-align: center;
-          }
-    }
-
-
-/* footer legales */
-footer {
-    .footer-up {
-        .legales {
-            padding: 0px;
-            width: 100%;
-            height: 87px;
-            display: flex;
-            background-color: #090909;
-            .data-footer{
-                display: block;
-                p {
-                    margin: 5px 0 0 0;
-                    color: #fff;
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 12px;
-                    line-height: 15px;
-                }
-                .g-text {
-                    width: 90%;
-                    padding: 0;
-                    color: #9999;
-                }
-            }
-
-            img {
-                margin-right: 10px;
-                margin-left: 16px;
-                width: 21.25px;
-                height: 36px;
-            }
         }
     }
 
-    #datos-contacto {
-        border-top: solid 1px #99999949;
-        height: 245px;
-        background-color: #090909;
-        display: block;
-        padding: 0;
-        .info {
-            display: block;
-            color: $grisFooter;
-            width: 270px;
-            height: 148px;
-            margin: 0 6vw;
-            .datos-info {
+
+    /* footer legales */
+    footer {
+        .footer-up {
+            .legales {
+                padding: 0px;
+                width: 100%;
+                height: 87px;
                 display: flex;
-                align-items: center;
+                background-color: #090909;
+
+                .data-footer {
+                    display: block;
+
+                    p {
+                        margin: 5px 0 0 0;
+                        color: #fff;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+
+                    .g-text {
+                        width: 90%;
+                        padding: 0;
+                        color: #9999;
+                    }
+                }
+
+                img {
+                    margin-right: 10px;
+                    margin-left: 16px;
+                    width: 21.25px;
+                    height: 36px;
+                }
             }
+        }
+
+        #datos-contacto {
+            border-top: solid 1px #99999949;
+            height: 245px;
+            background-color: #090909;
+            display: block;
+            padding: 0;
+
+            .info {
+                display: block;
+                color: $grisFooter;
+                width: 270px;
+                height: 148px;
+                margin: 0 6vw;
+
+                .datos-info {
+                    display: flex;
+                    align-items: center;
+                }
+
                 svg {
                     margin-left: 25px;
                     width: 24px;
@@ -402,4 +681,10 @@ footer {
 
         }
     }
+}
+.prueba{
+    display: block;
+}
+.flecha-empresas{
+    display: none;
 }
