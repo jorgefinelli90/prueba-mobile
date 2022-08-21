@@ -1,12 +1,30 @@
-.contacto-body{
+.body-contact {
+    background: none;
+}
+
+.contacto-body {
     height: 640px;
-    background-color: #1D1D1D;
     display: flex;
     justify-content: end;
-    .vector-bg{
-        img{
-            
+}
+
+
+@media (max-width: 380px) {
+    .contacto-body {
+        height: 640px;
+        background-color: #1D1D1D;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-end;
+
+        .vector-bg {
+            background: linear-gradient(87.34deg, #FC466B 0%, #3F5EFB 100%);
+            filter: blur(85px);
+            width: 19vw;
+            height: 72vw;
+            margin: 66px;
         }
     }
 }
-
