@@ -61,6 +61,7 @@
                     width: 72vw;
                 }
             }
+
             .div-s-corto {
                 margin: 10px 10px 10px 0;
                 width: 39.5vw;
@@ -83,14 +84,18 @@
             }
         }
     }
-    #section-2 .tarj-section .div-s-corto, #section-2 .tarj-section .div-s-largo {
+
+    #section-2 .tarj-section .div-s-corto,
+    #section-2 .tarj-section .div-s-largo {
         border: 1px solid $azul;
     }
+
     /* prueba */
-    .prueba{
+    .prueba {
         display: block;
     }
-    .flecha-empresas{
+
+    .flecha-empresas {
         display: none;
     }
 
@@ -126,7 +131,7 @@
                 font-weight: 700;
                 font-size: 30px;
                 line-height: 56px;
-                color: #1D1D1D;
+                color: #1d1d1d;
             }
         }
     }
@@ -202,7 +207,7 @@
                     p {
                         margin: 5px 0 0 0;
                         color: #fff;
-                        font-family: 'Montserrat';
+                        font-family: "Montserrat";
                         font-style: normal;
                         font-weight: 500;
                         font-size: 12px;
@@ -259,7 +264,6 @@
                     color: rgba(255, 255, 255, 0.792);
                 }
             }
-
         }
 
         .rrss {
@@ -267,74 +271,74 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            color: #FFF;
+            color: #fff;
 
             svg {
                 width: 32px;
                 height: 32px;
                 margin: 0px 10px;
             }
-
         }
     }
-        
 }
-
-
 
 /* mobile */
 @media (max-width: 380px) {
-    .copete-tittle {
-        h1 {
-            margin-bottom: 0px;
-            font-family: $tipografiaPrimaria;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 26px;
-            line-height: 56px;
-            color: $blancoTitulos;
-            text-shadow: $shadowText;
-            text-align: center;
+    #portada {
+        padding-top: 10px;
+
+        .copete-tittle {
+            h1 {
+                margin-bottom: 0px;
+                font-family: $tipografiaPrimaria;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 56px;
+                color: $blancoTitulos;
+                text-shadow: $shadowText;
+                text-align: center;
+            }
+
+            h2 {
+                padding-bottom: 20px;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: center;
+                color: $grisTextos;
+            }
         }
 
-        h2 {
-            padding-bottom: 20px;
-            font-family: "Montserrat";
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 20px;
-            text-align: center;
-            color: $grisTextos;
-        }
-    }
+        .blocks-h .block-h-left,
+        .blocks-h .block-h-right {
+            width: 90vw;
+            height: 145px;
+            border-radius: 8px;
+            margin: 5px 0px 10px 0px;
 
-    .blocks-h .block-h-left,
-    .blocks-h .block-h-right {
-        width: 90vw;
-        height: 145px;
-        border-radius: 8px;
-        margin: 5px 0px 10px 0px;
+            h3 {
+                margin: 24px 0 0 16px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 17px;
+            }
 
-        h3 {
-            margin: 24px 0 0 16px;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 17px;
-        }
+            p {
+                margin: 10px 0 0 16px;
+                width: 72vw;
+            }
 
-        p {
-            margin: 10px 0 0 16px;
-            width: 72vw;
-        }
-
-        svg {
-            margin: 0;
-            position: relative;
-            left: 295px;
-            bottom: 50px;
-            width: 26px;
-            height: 32px;
+            svg {
+                margin: 0;
+                position: relative;
+                left: 295px;
+                bottom: 50px;
+                width: 26px;
+                height: 32px;
+            }
         }
     }
 
@@ -455,14 +459,14 @@
     #clientes {
         .tittle-clientes {
             h1 {
-                width: 65vw;
+                max-width: 240px;
                 padding: 0px;
                 margin: 31px 0 20px 20vw;
                 font-family: "Montserrat", sans-serif;
                 font-weight: 700;
                 font-size: 25px;
                 line-height: 56px;
-                color: #1D1D1D;
+                color: #1d1d1d;
             }
         }
 
@@ -470,8 +474,14 @@
             margin-left: 0;
             width: 100%;
 
+            .clientes-carrousel {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
             .empresa {
-                margin: 5px;
+                margin: 7px 7px;
                 width: 156px;
                 height: 180px;
                 background-color: $backgroundDark;
@@ -497,7 +507,7 @@
                     font-size: 18px;
                     line-height: 16px;
                     text-align: center;
-                    color: #FFFFFF;
+                    color: #ffffff;
                     margin: 25px 0 0 0;
                     padding: 0;
                 }
@@ -591,7 +601,6 @@
         }
     }
 
-
     /* footer legales */
     footer {
         .footer-up {
@@ -608,7 +617,7 @@
                     p {
                         margin: 5px 0 0 0;
                         color: #fff;
-                        font-family: 'Montserrat';
+                        font-family: "Montserrat";
                         font-style: normal;
                         font-weight: 500;
                         font-size: 12px;
@@ -663,7 +672,6 @@
                     color: rgba(255, 255, 255, 0.792);
                 }
             }
-
         }
 
         .rrss {
@@ -671,20 +679,21 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            color: #FFF;
+            color: #fff;
 
             svg {
                 width: 32px;
                 height: 32px;
                 margin: 0px 10px;
             }
-
         }
     }
 }
-.prueba{
+
+.prueba {
     display: block;
 }
-.flecha-empresas{
+
+.flecha-empresas {
     display: none;
 }
