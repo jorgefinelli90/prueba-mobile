@@ -170,6 +170,7 @@
       font-size: 48px;
       line-height: 56px;
     }
+
     p {
       margin-left: 10vw;
       font-family: $tipografiaPrimaria;
@@ -279,6 +280,7 @@
       font-size: 48px;
       line-height: 56px;
     }
+
     p {
       margin-left: 10vw;
       font-family: $tipografiaPrimaria;
@@ -507,6 +509,7 @@
       color: $grisTextos;
     }
   }
+
   .btn-contact {
     margin: 12px auto;
     box-sizing: border-box;
@@ -525,7 +528,7 @@
     flex-grow: 0;
     position: relative;
   }
-  
+
   .btn-contact:before {
     content: "";
     border: 1px solid #252525;
@@ -534,7 +537,7 @@
     width: 149px;
     height: 48px;
   }
-  
+
   .btn-contact p {
     color: white;
     position: absolute;
@@ -548,7 +551,7 @@
     color: #d0d0d0;
     text-decoration: none;
   }
-  
+
   .btn-contact:hover::before {
     content: "";
     border: none;
@@ -559,3 +562,22 @@
   }
 }
 
+
+/* sticky  */
+
+.flecha-arriba {
+  position:fixed;
+  right:40px;
+  bottom:40px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(190deg, #FC466B 0%, #3F5EFB 100%);
+  border-radius: 40px;
+  svg{
+    color: #FFF;
+    width: 28px;
+    height: 28px;
+    margin-top: 11px;
+    margin-left: 11px;
+  }
+}

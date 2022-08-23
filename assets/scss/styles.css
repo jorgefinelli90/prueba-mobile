@@ -7,11 +7,14 @@
 /* imports secciones home */
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+* {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -817,6 +820,24 @@ nav #btn-mob .btn-contact:hover::before {
   border-radius: 8px;
   width: 146px;
   height: 45px;
+}
+
+/* sticky  */
+.flecha-arriba {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(190deg, #FC466B 0%, #3F5EFB 100%);
+  border-radius: 40px;
+}
+.flecha-arriba svg {
+  color: #FFF;
+  width: 28px;
+  height: 28px;
+  margin-top: 11px;
+  margin-left: 11px;
 }
 
 footer .footer-up .legales {
