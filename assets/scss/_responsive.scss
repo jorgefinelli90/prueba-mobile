@@ -302,6 +302,8 @@
 /* mobile */
 @media (max-width: 380px) {
     #portada {
+        background-color: $backgroundDark;
+        background-image: url(../img/vector-mobile.svg);
         padding-top: 10px;
 
         .copete-tittle {

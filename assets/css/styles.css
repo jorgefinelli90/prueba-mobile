@@ -222,6 +222,9 @@ nav #btn-mob .btn-contact:hover::before {
     left: 61px;
     top: 14px;
   }
+  #logo-contact {
+    display: none !important;
+  }
   #btn-mob {
     display: block !important;
   }
@@ -935,7 +938,7 @@ footer .rrss a {
 
 @media (max-width: 380px) {
   nav {
-    background: #1D1D1D;
+    background: #1d1d1d;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
   }
   nav .logo {
@@ -950,14 +953,85 @@ footer .rrss a {
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.15px;
-    color: #FFFFFF;
+    color: #ffffff;
     mix-blend-mode: normal;
     opacity: 0.87;
   }
   .contacto-body {
     height: 640px;
-    background-color: #1D1D1D;
+    background-color: #1d1d1d;
     display: flex;
+    /* CONTACTO-OK */
+  }
+  .contacto-body #contact-ok h1 {
+    position: absolute;
+    left: 8.06%;
+    right: 7.78%;
+    top: 23.85%;
+    bottom: 70.49%;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .contacto-body #contact-ok svg {
+    width: 56px;
+    height: 56px;
+    color: #ffffff;
+    position: absolute;
+    left: 43.06%;
+    right: 42.5%;
+    top: 17.14%;
+    bottom: 78.27%;
+  }
+  .contacto-body #contact-ok p {
+    position: absolute;
+    left: 19.44%;
+    right: 20%;
+    top: 45%;
+    bottom: 65.37%;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #d0d0d0;
+  }
+  .contacto-body #contact-ok a {
+    position: absolute;
+    left: 4.44%;
+    right: 4.67%;
+    top: 58.13%;
+    bottom: 37.28%;
+  }
+  .contacto-body #contact-ok .btn-ctn {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 5px;
+    position: relative;
+    width: 92%;
+    height: 52px;
+    background: linear-gradient(87.34deg, #fc466b 0%, #3f5efb 100%);
+    border-radius: 8px;
   }
   .contacto-body .vector-bg {
     background-image: url(../img/vector-mobile-contacto.svg);
@@ -975,7 +1049,7 @@ footer .rrss a {
     font-size: 26px;
     line-height: 32px;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .contacto-body .vector-bg label {
     font-family: "Montserrat", sans-serif;
@@ -984,21 +1058,24 @@ footer .rrss a {
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .contacto-body .vector-bg input {
     margin: 8px 16px;
     background-color: transparent;
-    border: 2px solid #D0D0D0;
+    border: 2px solid #d0d0d0;
     border-radius: 8px;
     height: 48px;
   }
   .contacto-body .vector-bg input:hover {
     margin: 8px 16px;
     background-color: transparent;
-    border: 2px solid #5F79FF;
+    border: 2px solid #5f79ff;
     border-radius: 8px;
     height: 48px;
+  }
+  .contacto-body .vector-bg a {
+    text-decoration: none;
   }
   .contacto-body .vector-bg .btn-ctn {
     font-family: "Montserrat", sans-serif;
@@ -1007,7 +1084,7 @@ footer .rrss a {
     font-size: 16px;
     line-height: 20px;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -1021,7 +1098,7 @@ footer .rrss a {
     position: relative;
     width: 92%;
     height: 52px;
-    background: linear-gradient(87.34deg, #FC466B 0%, #3F5EFB 100%);
+    background: linear-gradient(87.34deg, #fc466b 0%, #3f5efb 100%);
     border-radius: 8px;
   }
   .contacto-body .vector-bg .form-c-resp {
@@ -1287,6 +1364,8 @@ footer .rrss a {
 /* mobile */
 @media (max-width: 380px) {
   #portada {
+    background-color: #1D1D1D;
+    background-image: url(../img/vector-mobile.svg);
     padding-top: 10px;
   }
   #portada .copete-tittle h1 {
