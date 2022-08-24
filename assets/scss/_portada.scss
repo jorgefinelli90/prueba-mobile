@@ -194,7 +194,7 @@
 
   .div-s-largo {
     margin: 10px 10px 10px 0;
-    width: 50vw;
+    max-width: 651px;
     height: 230px;
     border: 1px solid #fc466b;
     border-radius: 8px;
@@ -209,7 +209,7 @@
 
     .h5-largo {
       margin: 10px 20px 0;
-      width: 48vw;
+      max-width: 651px;
     }
   }
 
@@ -303,7 +303,7 @@
 
     .div-s-largo {
       margin: 10px 10px 10px 0;
-      width: 50vw;
+      max-width: 651px;
       height: 230px;
       border: 1px solid $azul;
       border-radius: 8px;
@@ -318,7 +318,7 @@
 
       .h5-largo {
         margin: 10px 20px 0;
-        width: 48vw;
+        max-width: 651px;
       }
     }
   }
@@ -354,7 +354,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 78vw;
+    width: 1097px;
     height: 80px;
     background-color: $backgroundPlataformas;
     border-radius: 8px;
@@ -527,6 +527,7 @@
     order: 3;
     flex-grow: 0;
     position: relative;
+    left: 275px;
   }
 
   .btn-contact:before {

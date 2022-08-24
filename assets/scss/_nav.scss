@@ -1,5 +1,13 @@
 html {
   box-sizing: border-box;
+  
+}
+
+html {
+  width: 100%;
+}
+body {
+  min-width: 100%;
 }
 
 *, *::before, *::after {
@@ -10,7 +18,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+body {max-width: 1440px;
   margin: 0;
   padding: 0;
   line-height: 1.6;

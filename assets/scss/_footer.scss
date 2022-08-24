@@ -7,10 +7,12 @@ footer {
             display: flex;
             align-items: center;
             background-color: #090909;
-            .data-footer{
+
+            .data-footer {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
                 p {
                     color: #fff;
                     font-family: 'Montserrat';
@@ -19,7 +21,7 @@ footer {
                     font-size: 14px;
                     line-height: 17px;
                 }
-    
+
                 .g-text {
                     padding: 0 30px;
                     color: #9999;
@@ -52,33 +54,46 @@ footer {
                 display: flex;
                 align-items: center;
             }
-                svg {
-                    margin-left: 25px;
-                    width: 24px;
-                    height: 24px;
-                    color: $grisFooter;
-                }
-
-                p {
-                    margin-left: 1vw;
-                    color: rgba(255, 255, 255, 0.792);
-                }
-            }
-
-        }
-
-        .rrss {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            color: #FFF;
 
             svg {
-                width: 32px;
-                height: 32px;
-                margin: 0px 10px;
+                margin-left: 25px;
+                width: 24px;
+                height: 24px;
+                color: #999999;
             }
 
+            a {
+                text-decoration: none;
+                font-family: $tipografiaPrimaria;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                color: #999999;
+                margin-left: 5px;
+            }
         }
+
     }
 
+    .rrss {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #999999;
+
+        svg {
+            width: 32px;
+            height: 32px;
+            margin: 0px 10px;
+        }
+        a{
+            text-decoration: none;
+            color: #999999;
+            margin-top: 10px;
+        }
+
+    }
+}
