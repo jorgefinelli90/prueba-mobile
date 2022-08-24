@@ -392,17 +392,20 @@
   }
 
   #clientes-section {
-    margin-left: 13vw;
-    width: 81vw;
 
     .clientes-carrousel {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       flex-wrap: wrap;
     }
 
+    
+/* --------------------------------- */
+.prueba{
+  display: none;
+}
     .empresa {
-      margin: 5px;
+      margin: 10px;
       width: 203px;
       height: 230px;
       background-color: $backgroundDark;
@@ -511,7 +514,6 @@
   }
 
   .btn-contact {
-    margin: 12px auto;
     box-sizing: border-box;
     background: linear-gradient(87.34deg, #fc466b 0%, #3f5efb 100%);
     /* Auto layout */
@@ -526,8 +528,7 @@
     flex: none;
     order: 3;
     flex-grow: 0;
-    position: relative;
-    left: 275px;
+    margin-left: 20vw;
   }
 
   .btn-contact:before {
@@ -566,19 +567,9 @@
 
 /* sticky  */
 
-.flecha-arriba {
-  position:fixed;
-  right:40px;
-  bottom:40px;
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(190deg, #FC466B 0%, #3F5EFB 100%);
-  border-radius: 40px;
-  svg{
-    color: #FFF;
-    width: 28px;
-    height: 28px;
-    margin-top: 11px;
-    margin-left: 11px;
-  }
+
+
+/* --------------------------------- */
+.prueba{
+  display: none;
 }

@@ -215,6 +215,7 @@ nav #btn-mob .btn-contact:hover::before {
     background-color: #1D1D1D;
   }
   .logo {
+    display: flex !important;
     position: absolute;
     width: 97.17px;
     height: 24px;
@@ -678,16 +679,18 @@ nav #btn-mob .btn-contact:hover::before {
   text-shadow: none;
 }
 #clientes #clientes-section {
-  margin-left: 13vw;
-  width: 81vw;
+  /* --------------------------------- */
 }
 #clientes #clientes-section .clientes-carrousel {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
 }
+#clientes #clientes-section .prueba {
+  display: none;
+}
 #clientes #clientes-section .empresa {
-  margin: 5px;
+  margin: 10px;
   width: 203px;
   height: 230px;
   background-color: #1D1D1D;
@@ -784,7 +787,6 @@ nav #btn-mob .btn-contact:hover::before {
   color: #D0D0D0;
 }
 .contacto-clientes .btn-contact {
-  margin: 12px auto;
   box-sizing: border-box;
   background: linear-gradient(87.34deg, #fc466b 0%, #3f5efb 100%);
   /* Auto layout */
@@ -799,8 +801,7 @@ nav #btn-mob .btn-contact:hover::before {
   flex: none;
   order: 3;
   flex-grow: 0;
-  position: relative;
-  left: 275px;
+  margin-left: 20vw;
 }
 .contacto-clientes .btn-contact:before {
   content: "";
@@ -833,21 +834,9 @@ nav #btn-mob .btn-contact:hover::before {
 }
 
 /* sticky  */
-.flecha-arriba {
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(190deg, #FC466B 0%, #3F5EFB 100%);
-  border-radius: 40px;
-}
-.flecha-arriba svg {
-  color: #FFF;
-  width: 28px;
-  height: 28px;
-  margin-top: 11px;
-  margin-left: 11px;
+/* --------------------------------- */
+.prueba {
+  display: none;
 }
 
 footer .footer-up .legales {
@@ -1048,6 +1037,22 @@ footer .rrss a {
     height: 230px;
     border: 1px solid #fc466b;
     border-radius: 8px;
+  }
+  .flecha-arriba {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(190deg, #FC466B 0%, #3F5EFB 100%);
+    border-radius: 40px;
+  }
+  .flecha-arriba svg {
+    color: #FFF;
+    width: 28px;
+    height: 28px;
+    margin-top: 11px;
+    margin-left: 11px;
   }
   #section-1 .tittle-section h1,
 #section-2 .tittle-section h1 {
@@ -1333,6 +1338,22 @@ footer .rrss a {
     width: 26px;
     height: 32px;
   }
+  .flecha-arriba {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(190deg, #FC466B 0%, #3F5EFB 100%);
+    border-radius: 40px;
+  }
+  .flecha-arriba svg {
+    color: #FFF;
+    width: 28px;
+    height: 28px;
+    margin-top: 11px;
+    margin-left: 11px;
+  }
   #section-1 .tittle-section h1,
 #section-2 .tittle-section h1 {
     font-family: "Montserrat", sans-serif;
@@ -1602,13 +1623,16 @@ footer .rrss a {
   footer #datos-contacto .info {
     display: block;
     color: #999999;
-    width: 270px;
+    width: 320px;
     height: 148px;
-    margin: 0 6vw;
+    margin: 0 auto;
   }
   footer #datos-contacto .info .datos-info {
     display: flex;
     align-items: center;
+    width: 320px;
+    height: 44px;
+    margin-top: 10px;
   }
   footer #datos-contacto .info svg {
     margin-left: 25px;
@@ -1616,13 +1640,12 @@ footer .rrss a {
     height: 24px;
     color: #999999;
   }
-  footer #datos-contacto .info p {
+  footer #datos-contacto .info a {
     font-size: 14px;
-    margin-left: 1vw;
-    color: rgba(255, 255, 255, 0.792);
+    color: #999999;
   }
   footer .rrss {
-    padding-top: 20px;
+    padding-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
