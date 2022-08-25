@@ -1,8 +1,11 @@
 footer {
     .footer-up {
+        background-color: #090909;
+        display: flex;
+        justify-content: center;
+
         .legales {
-            padding-left: 12.5vw;
-            width: 100%;
+            width: 1097px;
             height: 78px;
             display: flex;
             align-items: center;
@@ -36,64 +39,78 @@ footer {
         }
     }
 
-    #datos-contacto {
-        border-top: solid 1px #99999949;
-        height: 62px;
+    .down-footer {
+        border-top: solid 1px #99999922;
         background-color: #090909;
         display: flex;
-        justify-content: space-around;
-        padding: 1vh 4vw;
+        justify-content: center;
 
-        .info {
+        #datos-contacto {
+            width: 1097px;
+            height: 62px;
+            background-color: #090909;
+            display: flex;
+            justify-content: space-between;
+            padding: 1vh 0px;
+
+            .info {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                color: $grisFooter;
+
+                .container-info:first-child{
+                    margin-left: 0px;
+                }
+                .container-info{
+                    margin-left: 30px;
+                    .datos-info {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+
+                svg {
+                    width: 24px;
+                    height: 24px;
+                    color: #999999;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-family: $tipografiaPrimaria;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    text-align: center;
+                    color: #999999;
+                    margin-left: 5px;
+                }
+            }
+
+        }
+
+        .rrss {
+            padding-top: 0px;
             display: flex;
             flex-direction: row;
             align-items: center;
-            color: $grisFooter;
-
-            .datos-info {
-                display: flex;
-                align-items: center;
-            }
+            color: #999999;
 
             svg {
-                margin-left: 25px;
-                width: 24px;
-                height: 24px;
-                color: #999999;
+                width: 32px;
+                height: 32px;
+                margin: 0px 10px;
             }
 
             a {
                 text-decoration: none;
-                font-family: $tipografiaPrimaria;
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 17px;
-                text-align: center;
                 color: #999999;
-                margin-left: 5px;
+                margin-top: 10px;
             }
+
         }
-
-    }
-
-    .rrss {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        color: #999999;
-
-        svg {
-            width: 32px;
-            height: 32px;
-            margin: 0px 10px;
-        }
-        a{
-            text-decoration: none;
-            color: #999999;
-            margin-top: 10px;
-        }
-
     }
 }

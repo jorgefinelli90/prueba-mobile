@@ -438,7 +438,7 @@ nav #btn-mob .btn-contact:hover::before {
 
 /* portadas estilos hover */
 .block-h-left:hover {
-  background-color: #1D1D1D;
+  background-color: transparent;
   border: solid 2px #FC466B;
 }
 .block-h-left:hover h3,
@@ -448,7 +448,7 @@ nav #btn-mob .btn-contact:hover::before {
 }
 
 .block-h-right:hover {
-  background-color: #1D1D1D;
+  background-color: transparent;
   border: solid 2px #5F79FF;
 }
 .block-h-right:hover h3,
@@ -488,9 +488,16 @@ nav #btn-mob .btn-contact:hover::before {
   font-size: 13px;
   line-height: 18px;
 }
-#section-1 .tittle-section h1 {
+#section-1 .container-tittle {
+  display: flex;
+  justify-content: center;
+}
+#section-1 .container-tittle .tittle-section {
+  width: 1097px;
+}
+#section-1 .container-tittle .tittle-section h2 {
+  max-width: 1097px;
   text-align: left;
-  margin-left: 10vw;
   color: #FFFFFF;
   font-family: "Montserrat";
   font-style: normal;
@@ -498,8 +505,8 @@ nav #btn-mob .btn-contact:hover::before {
   font-size: 48px;
   line-height: 56px;
 }
-#section-1 .tittle-section p {
-  margin-left: 10vw;
+#section-1 .container-tittle .tittle-section h3 {
+  max-width: 1097px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -513,7 +520,7 @@ nav #btn-mob .btn-contact:hover::before {
 }
 #section-1 .tarj-section {
   display: flex;
-  margin-left: 10vw;
+  justify-content: center;
   flex-wrap: wrap;
 }
 #section-1 .div-s-largo {
@@ -581,9 +588,16 @@ nav #btn-mob .btn-contact:hover::before {
   font-size: 13px;
   line-height: 18px;
 }
-#section-2 .tittle-section h1 {
+#section-2 .container-tittle {
+  display: flex;
+  justify-content: center;
+}
+#section-2 .container-tittle .tittle-section {
+  width: 1097px;
+}
+#section-2 .container-tittle .tittle-section h2 {
+  max-width: 1097px;
   text-align: left;
-  margin-left: 10vw;
   color: #FFFFFF;
   font-family: "Montserrat";
   font-style: normal;
@@ -591,8 +605,8 @@ nav #btn-mob .btn-contact:hover::before {
   font-size: 48px;
   line-height: 56px;
 }
-#section-2 .tittle-section p {
-  margin-left: 10vw;
+#section-2 .container-tittle .tittle-section h3 {
+  max-width: 1097px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -606,7 +620,7 @@ nav #btn-mob .btn-contact:hover::before {
 }
 #section-2 .tarj-section {
   display: flex;
-  margin-left: 10vw;
+  justify-content: center;
   flex-wrap: wrap;
 }
 #section-2 .tarj-section .div-s-largo {
@@ -669,9 +683,13 @@ nav #btn-mob .btn-contact:hover::before {
 
 /* ------------------------------------------------- */
 /* empresas - clientes */
+#clientes .tittle-clientes {
+  display: flex;
+  justify-content: center;
+}
 #clientes .tittle-clientes h1 {
-  margin: 80px 0 50px 8.5vw;
-  width: 600px;
+  margin: 80px 0 50px 0;
+  width: 1097px;
   height: 56px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -761,6 +779,7 @@ nav #btn-mob .btn-contact:hover::before {
   display: flex;
   align-items: center;
   z-index: 3;
+  justify-content: space-between;
 }
 .contacto-clientes .asside-contact {
   display: flex;
@@ -792,7 +811,6 @@ nav #btn-mob .btn-contact:hover::before {
 .contacto-clientes .btn-contact {
   box-sizing: border-box;
   background: linear-gradient(87.34deg, #fc466b 0%, #3f5efb 100%);
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -800,11 +818,10 @@ nav #btn-mob .btn-contact:hover::before {
   width: 153px;
   height: 52px;
   border-radius: 8px;
-  /* Inside auto layout */
   flex: none;
   order: 3;
   flex-grow: 0;
-  margin-left: 20vw;
+  margin: 0 40px;
 }
 .contacto-clientes .btn-contact:before {
   content: "";
@@ -842,9 +859,13 @@ nav #btn-mob .btn-contact:hover::before {
   display: none;
 }
 
+footer .footer-up {
+  background-color: #090909;
+  display: flex;
+  justify-content: center;
+}
 footer .footer-up .legales {
-  padding-left: 12.5vw;
-  width: 100%;
+  width: 1097px;
   height: 78px;
   display: flex;
   align-items: center;
@@ -872,31 +893,42 @@ footer .footer-up .legales img {
   width: 21.25px;
   height: 36px;
 }
-footer #datos-contacto {
-  border-top: solid 1px rgba(153, 153, 153, 0.2862745098);
+footer .down-footer {
+  border-top: solid 1px rgba(153, 153, 153, 0.1333333333);
+  background-color: #090909;
+  display: flex;
+  justify-content: center;
+}
+footer .down-footer #datos-contacto {
+  width: 1097px;
   height: 62px;
   background-color: #090909;
   display: flex;
-  justify-content: space-around;
-  padding: 1vh 4vw;
+  justify-content: space-between;
+  padding: 1vh 0px;
 }
-footer #datos-contacto .info {
+footer .down-footer #datos-contacto .info {
   display: flex;
   flex-direction: row;
   align-items: center;
   color: #999999;
 }
-footer #datos-contacto .info .datos-info {
+footer .down-footer #datos-contacto .info .container-info:first-child {
+  margin-left: 0px;
+}
+footer .down-footer #datos-contacto .info .container-info {
+  margin-left: 30px;
+}
+footer .down-footer #datos-contacto .info .container-info .datos-info {
   display: flex;
   align-items: center;
 }
-footer #datos-contacto .info svg {
-  margin-left: 25px;
+footer .down-footer #datos-contacto .info svg {
   width: 24px;
   height: 24px;
   color: #999999;
 }
-footer #datos-contacto .info a {
+footer .down-footer #datos-contacto .info a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-family: "Montserrat";
@@ -908,18 +940,19 @@ footer #datos-contacto .info a {
   color: #999999;
   margin-left: 5px;
 }
-footer .rrss {
+footer .down-footer .rrss {
+  padding-top: 0px;
   display: flex;
   flex-direction: row;
   align-items: center;
   color: #999999;
 }
-footer .rrss svg {
+footer .down-footer .rrss svg {
   width: 32px;
   height: 32px;
   margin: 0px 10px;
 }
-footer .rrss a {
+footer .down-footer .rrss a {
   text-decoration: none;
   color: #999999;
   margin-top: 10px;
@@ -1107,13 +1140,24 @@ footer .rrss a {
   }
 }
 /* imports responsive */
-@media screen and (min-width: 380px) and (max-width: 900px) {
+@media screen and (min-width: 420px) and (max-width: 900px) {
   #section-1 .tarj-section .div-s-largo {
     margin: 10px 10px 10px 0;
-    width: 66vw;
+    max-width: 66vw;
+    min-width: 419px;
     height: 230px;
     border: 1px solid #fc466b;
     border-radius: 8px;
+  }
+  #section-1 .tarj-section .div-s-largo .h5-largo {
+    width: 402px;
+  }
+  #section-2 .tarj-section .div-s-largo {
+    max-width: 66vw;
+    min-width: 419px;
+  }
+  #section-2 .tarj-section .div-s-largo .h5-largo {
+    width: 402px;
   }
   .flecha-arriba {
     position: fixed;
@@ -1131,72 +1175,77 @@ footer .rrss a {
     margin-top: 11px;
     margin-left: 11px;
   }
-  #section-1 .tittle-section h1,
-#section-2 .tittle-section h1 {
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    text-align: center;
-    margin: 0px;
+  #section-1 .container-tittle .tittle-section h2,
+#section-2 .container-tittle .tittle-section h2 {
+    margin: 0 12px;
+    max-width: 1097px;
+    text-align: left;
+    color: #FFFFFF;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
     font-size: 30px;
+    line-height: 56px;
   }
-  #section-1 .tittle-section p,
-#section-2 .tittle-section p {
-    margin-top: 0px;
-    width: 90%;
-    text-align: center;
-    margin-left: 5vw;
+  #section-1 .container-tittle .tittle-section h3,
+#section-2 .container-tittle .tittle-section h3 {
+    margin: 0 20px;
+    margin-left: 10px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    line-height: 20px;
-    color: #d0d0d0;
+    line-height: 22px;
+    color: #D0D0D0;
+    max-width: 872px;
+    height: 96px;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
-  #section-1 .tarj-section,
-#section-2 .tarj-section {
+  #section-1 .container-tittle .tarj-section,
+#section-2 .container-tittle .tarj-section {
     margin: 0;
     display: flex;
     justify-content: center;
   }
-  #section-1 .tarj-section .div-s-largo,
-#section-2 .tarj-section .div-s-largo {
+  #section-1 .container-tittle .tarj-section .div-s-largo,
+#section-2 .container-tittle .tarj-section .div-s-largo {
     margin: 10px 10px 10px 0;
     width: 80vw;
-    height: 245px;
+    height: 250px;
     border: 1px solid #fc466b;
     border-radius: 8px;
   }
-  #section-1 .tarj-section .div-s-largo svg,
-#section-2 .tarj-section .div-s-largo svg {
+  #section-1 .container-tittle .tarj-section .div-s-largo svg,
+#section-2 .container-tittle .tarj-section .div-s-largo svg {
     margin: 30px 20px 0;
   }
-  #section-1 .tarj-section .div-s-largo h4,
-#section-2 .tarj-section .div-s-largo h4 {
+  #section-1 .container-tittle .tarj-section .div-s-largo h4,
+#section-2 .container-tittle .tarj-section .div-s-largo h4 {
     margin: 10px 20px 0;
   }
-  #section-1 .tarj-section .div-s-largo .h5-largo,
-#section-2 .tarj-section .div-s-largo .h5-largo {
+  #section-1 .container-tittle .tarj-section .div-s-largo .h5-largo,
+#section-2 .container-tittle .tarj-section .div-s-largo .h5-largo {
     margin: 10px 20px 0;
-    width: 72vw;
   }
-  #section-1 .tarj-section .div-s-corto,
-#section-2 .tarj-section .div-s-corto {
+  #section-1 .container-tittle .tarj-section .div-s-corto,
+#section-2 .container-tittle .tarj-section .div-s-corto {
     margin: 10px 10px 10px 0;
     width: 39.5vw;
     height: 260px;
     border: 1px solid #fc466b;
     border-radius: 8px;
   }
-  #section-1 .tarj-section .div-s-corto svg,
-#section-2 .tarj-section .div-s-corto svg {
+  #section-1 .container-tittle .tarj-section .div-s-corto svg,
+#section-2 .container-tittle .tarj-section .div-s-corto svg {
     margin: 30px 20px 0;
   }
-  #section-1 .tarj-section .div-s-corto h4,
-#section-2 .tarj-section .div-s-corto h4 {
+  #section-1 .container-tittle .tarj-section .div-s-corto h4,
+#section-2 .container-tittle .tarj-section .div-s-corto h4 {
     margin: 10px 20px 0;
   }
-  #section-1 .tarj-section .div-s-corto h5,
-#section-2 .tarj-section .div-s-corto h5 {
+  #section-1 .container-tittle .tarj-section .div-s-corto h5,
+#section-2 .container-tittle .tarj-section .div-s-corto h5 {
     width: 33vw;
     margin: 10px 20px 0;
   }
@@ -1283,9 +1332,10 @@ footer .rrss a {
     color: #D0D0D0;
   }
   .contacto-clientes .ctn {
-    margin: 6px;
+    margin: 6px auto;
     display: block;
     text-align: center;
+    width: 222px;
   }
   footer .footer-up .legales {
     padding: 0px;
@@ -1317,14 +1367,17 @@ footer .rrss a {
     width: 21.25px;
     height: 36px;
   }
-  footer #datos-contacto {
+  footer .down-footer {
+    background-color: #090909;
+  }
+  footer .down-footer #datos-contacto {
     border-top: solid 1px rgba(153, 153, 153, 0.2862745098);
     height: 245px;
     background-color: #090909;
     display: block;
     padding: 0;
   }
-  footer #datos-contacto .info {
+  footer .down-footer #datos-contacto .info {
     display: flex;
     color: #999999;
     width: 90%;
@@ -1333,17 +1386,17 @@ footer .rrss a {
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  footer #datos-contacto .info .datos-info {
+  footer .down-footer #datos-contacto .info .datos-info {
     display: flex;
     align-items: center;
   }
-  footer #datos-contacto .info svg {
+  footer .down-footer #datos-contacto .info svg {
     margin-left: 25px;
     width: 24px;
     height: 24px;
     color: #999999;
   }
-  footer #datos-contacto .info p {
+  footer .down-footer #datos-contacto .info p {
     font-size: 14px;
     margin-left: 1vw;
     color: rgba(255, 255, 255, 0.792);
@@ -1362,11 +1415,12 @@ footer .rrss a {
   }
 }
 /* mobile */
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   #portada {
     background-color: #1D1D1D;
     background-image: url(../img/vector-mobile.svg);
     padding-top: 10px;
+    background-size: cover;
   }
   #portada .copete-tittle h1 {
     margin-bottom: 0px;
@@ -1433,25 +1487,26 @@ footer .rrss a {
     margin-top: 11px;
     margin-left: 11px;
   }
-  #section-1 .tittle-section h1,
-#section-2 .tittle-section h1 {
+  #section-1 .cont-data .tittle-section h2, #section-1 .container-tittle .tittle-section h2,
+#section-2 .cont-data .tittle-section h2,
+#section-2 .container-tittle .tittle-section h2 {
     font-family: "Montserrat", sans-serif;
     color: white;
     text-align: center;
-    margin: 0px;
+    margin: 10px auto;
     font-size: 20px;
   }
-  #section-1 .tittle-section p,
-#section-2 .tittle-section p {
-    margin-top: 0px;
-    width: 90%;
+  #section-1 .cont-data .tittle-section h3, #section-1 .container-tittle .tittle-section h3,
+#section-2 .cont-data .tittle-section h3,
+#section-2 .container-tittle .tittle-section h3 {
+    margin: 0 auto;
+    width: 85%;
     text-align: center;
-    margin-left: 5vw;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    line-height: 20px;
+    line-height: 1.6;
     color: #d0d0d0;
   }
   #section-1 .tarj-section,
@@ -1484,7 +1539,7 @@ footer .rrss a {
   #section-1 .tarj-section .div-s-largo .h5-largo,
 #section-2 .tarj-section .div-s-largo .h5-largo {
     margin: 8px 0 0 16px;
-    width: 80vw;
+    width: 78vw;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -1515,7 +1570,7 @@ footer .rrss a {
   #section-1 .tarj-section .div-s-corto h5,
 #section-2 .tarj-section .div-s-corto h5 {
     margin: 8px 0 0 16px;
-    width: 80vw;
+    width: 75vw;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -1540,7 +1595,7 @@ footer .rrss a {
   #clientes .tittle-clientes h1 {
     max-width: 240px;
     padding: 0px;
-    margin: 31px 0 20px 20vw;
+    margin: 31px 0 20px 0;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 25px;
@@ -1627,6 +1682,21 @@ footer .rrss a {
     align-items: center;
     z-index: 3;
   }
+  .contacto-clientes .btn-contact {
+    box-sizing: border-box;
+    background: linear-gradient(87.34deg, #fc466b 0%, #3f5efb 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    height: 52px;
+    border-radius: 8px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 15px auto;
+  }
   .contacto-clientes .asside-contact {
     display: block;
   }
@@ -1692,39 +1762,49 @@ footer .rrss a {
     width: 21.25px;
     height: 36px;
   }
-  footer #datos-contacto {
+  footer .down-footer #datos-contacto {
     border-top: solid 1px rgba(153, 153, 153, 0.2862745098);
     height: 245px;
     background-color: #090909;
     display: block;
     padding: 0;
   }
-  footer #datos-contacto .info {
+  footer .down-footer #datos-contacto .info {
     display: block;
     color: #999999;
     width: 320px;
     height: 148px;
     margin: 0 auto;
   }
-  footer #datos-contacto .info .datos-info {
+  footer .down-footer #datos-contacto .info .container-info:first-child {
+    margin-left: 0px;
+  }
+  footer .down-footer #datos-contacto .info .container-info {
+    margin-left: 0px;
+  }
+  footer .down-footer #datos-contacto .info .container-info .datos-info {
+    display: flex;
+    align-items: center;
+  }
+  footer .down-footer #datos-contacto .info .datos-info {
     display: flex;
     align-items: center;
     width: 320px;
     height: 44px;
     margin-top: 10px;
   }
-  footer #datos-contacto .info svg {
+  footer .down-footer #datos-contacto .info svg {
     margin-left: 25px;
     width: 24px;
     height: 24px;
     color: #999999;
   }
-  footer #datos-contacto .info a {
+  footer .down-footer #datos-contacto .info a {
     font-size: 14px;
     color: #999999;
   }
   footer .rrss {
-    padding-top: 10px;
+    padding-top: 20px !important;
     display: flex;
     flex-direction: row;
     justify-content: center;

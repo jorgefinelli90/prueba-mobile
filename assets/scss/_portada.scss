@@ -102,7 +102,7 @@
 /* portadas estilos hover */
 
 .block-h-left:hover {
-  background-color: $backgroundDark;
+  background-color: transparent;
   border: solid 2px $rojo;
 
   h3,
@@ -113,7 +113,7 @@
 }
 
 .block-h-right:hover {
-  background-color: $backgroundDark;
+  background-color: transparent;
   border: solid 2px $azul;
 
   h3,
@@ -158,37 +158,42 @@
     font-size: 13px;
     line-height: 18px;
   }
-
-  .tittle-section {
-    h1 {
-      text-align: left;
-      margin-left: 10vw;
-      color: $blancoTitulos;
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 56px;
-    }
-
-    p {
-      margin-left: 10vw;
-      font-family: $tipografiaPrimaria;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 21px;
-      line-height: 32px;
-      color: $grisTextos;
-      max-width: 872px;
-      height: 96px;
-      text-overflow: ellipsis;
-      overflow: hidden;
+  .container-tittle{
+    display: flex;
+    justify-content: center;
+    .tittle-section {
+      width: 1097px;
+      h2 {
+        max-width: 1097px;
+        text-align: left;
+        color: $blancoTitulos;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+      }
+  
+      h3 {
+        max-width: 1097px;
+        font-family: $tipografiaPrimaria;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 32px;
+        color: $grisTextos;
+        max-width: 872px;
+        height: 96px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
     }
   }
+  
 
   .tarj-section {
     display: flex;
-    margin-left: 10vw;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
@@ -269,36 +274,41 @@
     line-height: 18px;
   }
 
-  .tittle-section {
-    h1 {
-      text-align: left;
-      margin-left: 10vw;
-      color: $blancoTitulos;
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 56px;
-    }
-
-    p {
-      margin-left: 10vw;
-      font-family: $tipografiaPrimaria;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 21px;
-      line-height: 32px;
-      color: $grisTextos;
-      max-width: 872px;
-      height: 96px;
-      text-overflow: ellipsis;
-      overflow: hidden;
+  .container-tittle{
+    display: flex;
+    justify-content: center;
+    .tittle-section {
+      width: 1097px;
+      h2 {
+        max-width: 1097px;
+        text-align: left;
+        color: $blancoTitulos;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+      }
+  
+      h3 {
+        max-width: 1097px;
+        font-family: $tipografiaPrimaria;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 32px;
+        color: $grisTextos;
+        max-width: 872px;
+        height: 96px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
     }
   }
 
   .tarj-section {
     display: flex;
-    margin-left: 10vw;
+    justify-content: center;
     flex-wrap: wrap;
 
     .div-s-largo {
@@ -377,9 +387,12 @@
 
 #clientes {
   .tittle-clientes {
+    display: flex;
+    justify-content: center;
+    
     h1 {
-      margin: 80px 0 50px 8.5vw;
-      width: 600px;
+      margin: 80px 0 50px 0;
+      width: 1097px;
       height: 56px;
       font-family: $tipografiaPrimaria;
       font-style: normal;
@@ -481,6 +494,7 @@
   display: flex;
   align-items: center;
   z-index: 3;
+  justify-content: space-between;
 
   .asside-contact {
     display: flex;
@@ -516,7 +530,6 @@
   .btn-contact {
     box-sizing: border-box;
     background: linear-gradient(87.34deg, #fc466b 0%, #3f5efb 100%);
-    /* Auto layout */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -524,11 +537,10 @@
     width: 153px;
     height: 52px;
     border-radius: 8px;
-    /* Inside auto layout */
     flex: none;
     order: 3;
     flex-grow: 0;
-    margin-left: 20vw;
+    margin: 0 40px;
   }
 
   .btn-contact:before {
