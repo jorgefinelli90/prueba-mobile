@@ -4,3 +4,12 @@ $('.navTrigger').click(function () {
     $("#btn-mob").toggleClass("btn-mob-active");
     $("#mainListDiv").fadeIn();
 });
+
+$('.flecha-empresas').click(function () {
+    $(this).toggleClass('activo');
+    $("#empresa1").toggleClass("prueba");
+});
+$('.flecha-empresas').click(function () {
+    $(this).toggleClass('activo');
+    $("#empresa2").toggleClass("empresas");
+});

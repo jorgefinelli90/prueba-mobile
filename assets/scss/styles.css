@@ -832,9 +832,49 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-left: 7vw;
 }
 #clientes #clientes-section .prueba {
   display: none;
+}
+#clientes #clientes-section .empresas {
+  display: block !important;
+  margin: 10px;
+  width: 203px;
+  height: 230px;
+  background-color: #1D1D1D;
+  border-radius: 8px;
+}
+#clientes #clientes-section .empresas .logo-emp {
+  height: 90px;
+}
+#clientes #clientes-section .empresas .logo-emp img {
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#clientes #clientes-section .empresas h4 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  margin: 25px 0 0 0;
+  padding: 0;
+}
+#clientes #clientes-section .empresas h5 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #D0D0D0;
+  margin: 8px 0 0 0;
+  padding: 0;
 }
 #clientes #clientes-section .empresa {
   margin: 10px;
@@ -875,6 +915,7 @@ body {
   padding: 0;
 }
 #clientes #clientes-section .flecha-empresas {
+  display: block;
   background-color: #1D1D1D;
   border-radius: 50px;
   width: 50px;
@@ -1985,6 +2026,7 @@ footer .down-footer .rrss a {
     padding: 0;
   }
   #clientes #clientes-section .flecha-empresas {
+    display: none;
     background-color: #1D1D1D;
     border-radius: 50px;
     width: 50px;
@@ -1998,6 +2040,9 @@ footer .down-footer .rrss a {
     height: 32px;
     color: #FFFFFF;
     margin: 8px;
+  }
+  #clientes #clientes-section .prueba {
+    display: block;
   }
   /* contacto arriba footer */
   .cont {
@@ -2151,8 +2196,4 @@ footer .down-footer .rrss a {
 }
 .prueba {
   display: block;
-}
-
-.flecha-empresas {
-  display: none;
 }/*# sourceMappingURL=styles.css.map */

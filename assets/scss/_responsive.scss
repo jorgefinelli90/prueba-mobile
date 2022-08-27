@@ -601,6 +601,7 @@
             }
 
             .flecha-empresas {
+                display: none;
                 background-color: $backgroundDark;
                 border-radius: 50px;
                 width: 50px;
@@ -615,6 +616,9 @@
                     color: $blancoTitulos;
                     margin: 8px;
                 }
+            }
+            .prueba{
+                display: block;
             }
         }
     }
@@ -801,8 +805,4 @@
 
 .prueba {
     display: block;
-}
-
-.flecha-empresas {
-    display: none;
 }

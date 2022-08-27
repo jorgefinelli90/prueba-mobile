@@ -158,11 +158,14 @@
     font-size: 13px;
     line-height: 18px;
   }
-  .container-tittle{
+
+  .container-tittle {
     display: flex;
     justify-content: center;
+
     .tittle-section {
       width: 1097px;
+
       h2 {
         max-width: 1097px;
         text-align: left;
@@ -173,7 +176,7 @@
         font-size: 48px;
         line-height: 56px;
       }
-  
+
       h3 {
         max-width: 1097px;
         font-family: $tipografiaPrimaria;
@@ -189,7 +192,7 @@
       }
     }
   }
-  
+
 
   .tarj-section {
     display: flex;
@@ -274,11 +277,13 @@
     line-height: 18px;
   }
 
-  .container-tittle{
+  .container-tittle {
     display: flex;
     justify-content: center;
+
     .tittle-section {
       width: 1097px;
+
       h2 {
         max-width: 1097px;
         text-align: left;
@@ -289,7 +294,7 @@
         font-size: 48px;
         line-height: 56px;
       }
-  
+
       h3 {
         max-width: 1097px;
         font-family: $tipografiaPrimaria;
@@ -389,7 +394,7 @@
   .tittle-clientes {
     display: flex;
     justify-content: center;
-    
+
     h1 {
       margin: 80px 0 50px 0;
       width: 1097px;
@@ -410,13 +415,57 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      margin-left: 7vw;
     }
 
+
+    /* --------------------------------- */
+    .prueba {
+      display: none;
+    }
+
+    .empresas {
+      display: block !important;
+      margin: 10px;
+      width: 203px;
+      height: 230px;
+      background-color: #1D1D1D;
+      border-radius: 8px;
+      .logo-emp {
+          height: 90px;
+      
+          img {
+            padding-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+          }
+    }
+        h4 {
+          font-family: $tipografiaPrimaria;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          text-align: center;
+          color: #ffffff;
+          margin: 25px 0 0 0;
+          padding: 0;
+        }
     
-/* --------------------------------- */
-.prueba{
-  display: none;
-}
+        h5 {
+          font-family: $tipografiaPrimaria;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 18px;
+          text-align: center;
+          color: $grisTextos;
+          margin: 8px 0 0 0;
+          padding: 0;
+        }
+      }
+
     .empresa {
       margin: 10px;
       width: 203px;
@@ -461,6 +510,7 @@
     }
 
     .flecha-empresas {
+      display: block;
       background-color: $backgroundDark;
       border-radius: 50px;
       width: 50px;
@@ -582,6 +632,6 @@
 
 
 /* --------------------------------- */
-.prueba{
+.prueba {
   display: none;
 }
