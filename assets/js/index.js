@@ -12,3 +12,5 @@ ham.addEventListener('click', () => {
     barras.forEach(child => {child.classList.toggle('animado')});
     ham.classList.toggle('girar');
 });
+
+
