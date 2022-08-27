@@ -8,43 +8,48 @@
                 height: 230px;
                 border: 1px solid #fc466b;
                 border-radius: 8px;
-                .h5-largo{
+
+                .h5-largo {
                     width: 402px;
                 }
             }
         }
     }
+
     #section-2 {
         .tarj-section {
             .div-s-largo {
                 max-width: 66vw;
                 min-width: 419px;
-                .h5-largo{
+
+                .h5-largo {
                     width: 402px;
                 }
             }
         }
     }
+
     .flecha-arriba {
-        position:fixed;
-        right:40px;
-        bottom:40px;
+        position: fixed;
+        right: 40px;
+        bottom: 40px;
         width: 50px;
         height: 50px;
         background: linear-gradient(190deg, #FC466B 0%, #3F5EFB 100%);
         border-radius: 40px;
-        svg{
-          color: #FFF;
-          width: 28px;
-          height: 28px;
-          margin-top: 11px;
-          margin-left: 11px;
+
+        svg {
+            color: #FFF;
+            width: 28px;
+            height: 28px;
+            margin-top: 11px;
+            margin-left: 11px;
         }
-      }
+    }
 
     #section-1,
     #section-2 {
-        .container-tittle{
+        .container-tittle {
             .tittle-section {
                 h2 {
                     margin: 0 12px;
@@ -56,9 +61,9 @@
                     font-weight: 700;
                     font-size: 30px;
                     line-height: 56px;
-                  }
-              
-                  h3 {
+                }
+
+                h3 {
                     margin: 0 20px;
                     margin-left: 10px;
                     font-family: $tipografiaPrimaria;
@@ -71,49 +76,49 @@
                     height: 96px;
                     text-overflow: ellipsis;
                     overflow: hidden;
-                  }
+                }
             }
-    
+
             .tarj-section {
                 margin: 0;
                 display: flex;
                 justify-content: center;
-    
+
                 .div-s-largo {
                     margin: 10px 10px 10px 0;
                     width: 80vw;
                     height: 250px;
                     border: 1px solid #fc466b;
                     border-radius: 8px;
-    
+
                     svg {
                         margin: 30px 20px 0;
                     }
-    
+
                     h4 {
                         margin: 10px 20px 0;
                     }
-    
+
                     .h5-largo {
                         margin: 10px 20px 0;
                     }
                 }
-    
+
                 .div-s-corto {
                     margin: 10px 10px 10px 0;
                     width: 39.5vw;
                     height: 260px;
                     border: 1px solid #fc466b;
                     border-radius: 8px;
-    
+
                     svg {
                         margin: 30px 20px 0;
                     }
-    
+
                     h4 {
                         margin: 10px 20px 0;
                     }
-    
+
                     h5 {
                         width: 33vw;
                         margin: 10px 20px 0;
@@ -269,7 +274,7 @@
             }
         }
 
-        .down-footer{
+        .down-footer {
             background-color: #090909;
 
             #datos-contacto {
@@ -278,7 +283,7 @@
                 background-color: #090909;
                 display: block;
                 padding: 0;
-    
+
                 .info {
                     display: flex;
                     color: #999999;
@@ -287,19 +292,19 @@
                     margin: 0 6vw;
                     justify-content: space-around;
                     flex-wrap: wrap;
-    
+
                     .datos-info {
                         display: flex;
                         align-items: center;
                     }
-    
+
                     svg {
                         margin-left: 25px;
                         width: 24px;
                         height: 24px;
                         color: $grisFooter;
                     }
-    
+
                     p {
                         font-size: 14px;
                         margin-left: 1vw;
@@ -309,7 +314,7 @@
             }
         }
 
-        
+
 
         .rrss {
             padding-top: 20px;
@@ -389,26 +394,30 @@
             }
         }
     }
+
     .flecha-arriba {
-        position:fixed;
-        right:40px;
-        bottom:40px;
+        position: fixed;
+        right: 40px;
+        bottom: 40px;
         width: 50px;
         height: 50px;
         background: linear-gradient(190deg, #FC466B 0%, #3F5EFB 100%);
         border-radius: 40px;
-        svg{
-          color: #FFF;
-          width: 28px;
-          height: 28px;
-          margin-top: 11px;
-          margin-left: 11px;
+
+        svg {
+            color: #FFF;
+            width: 28px;
+            height: 28px;
+            margin-top: 11px;
+            margin-left: 11px;
         }
-      }
+    }
 
     #section-1,
     #section-2 {
-        .cont-data, .container-tittle{
+
+        .cont-data,
+        .container-tittle {
             .tittle-section {
                 h2 {
                     font-family: $tipografiaPrimaria;
@@ -417,7 +426,7 @@
                     margin: 10px auto;
                     font-size: 20px;
                 }
-    
+
                 h3 {
                     margin: 0 auto;
                     width: 85%;
@@ -640,7 +649,8 @@
             order: 3;
             flex-grow: 0;
             margin: 15px auto;
-          }
+        }
+
         .asside-contact {
             display: block;
 
@@ -672,7 +682,7 @@
                 line-height: 21px;
                 color: $grisTextos;
             }
-            
+
         }
 
         .ctn {
@@ -721,14 +731,14 @@
             }
         }
 
-        .down-footer{
+        .down-footer {
             #datos-contacto {
                 border-top: solid 1px #99999949;
                 height: 245px;
                 background-color: #090909;
                 display: block;
                 padding: 0;
-    
+
                 .info {
                     display: block;
                     color: $grisFooter;
@@ -736,17 +746,19 @@
                     height: 148px;
                     margin: 0 auto;
 
-                    .container-info:first-child{
+                    .container-info:first-child {
                         margin-left: 0px;
                     }
-                    .container-info{
+
+                    .container-info {
                         margin-left: 0px;
+
                         .datos-info {
                             display: flex;
                             align-items: center;
                         }
                     }
-    
+
                     .datos-info {
                         display: flex;
                         align-items: center;
@@ -754,14 +766,14 @@
                         height: 44px;
                         margin-top: 10px;
                     }
-    
+
                     svg {
                         margin-left: 25px;
                         width: 24px;
                         height: 24px;
                         color: $grisFooter;
                     }
-    
+
                     a {
                         font-size: 14px;
                         color: #999999;
