@@ -1223,6 +1223,9 @@ footer .down-footer .rrss a {
 .contacto-body {
   padding: 0;
 }
+.contacto-body .vector-bg .tittle-contact {
+  padding-top: 125px;
+}
 .contacto-body #contact-ok {
   display: flex;
   align-content: center;

@@ -149,6 +149,11 @@
 
 .contacto-body {
     padding: 0;
+    .vector-bg{
+        .tittle-contact{
+                padding-top: 125px;
+        }
+    }
 
     #contact-ok {
         display: flex;
