@@ -206,7 +206,7 @@
 
         p {
             margin: 15px auto;
-            font-family: "Roboto";
+            font-family: $tipografiaPrimaria;
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
@@ -226,11 +226,9 @@
         /* CONTACTO-OK */
         #contact-ok {
             h1 {
-                position: absolute;
-                left: 8.06%;
-                right: 7.78%;
-                top: 23.85%;
-                bottom: 70.49%;
+                position: relative;
+                bottom: 10px;
+                width: 90%;
                 font-family: "Montserrat";
                 font-style: normal;
                 font-weight: 700;
@@ -244,19 +242,13 @@
                 width: 56px;
                 height: 56px;
                 color: #ffffff;
-                position: absolute;
-                left: 43.06%;
-                right: 42.5%;
-                top: 17.14%;
-                bottom: 78.27%;
+                position: relative;
+                bottom: 10px;
             }
 
             p {
-                position: absolute;
-                left: 19.44%;
-                right: 20%;
-                top: 45%;
-                bottom: 65.37%;
+                position: relative;
+                bottom: 70px;
                 font-family: "Montserrat";
                 font-style: normal;
                 font-weight: 400;
@@ -267,16 +259,17 @@
             }
 
             a {
-                position: absolute;
-                left: 4.44%;
-                right: 4.67%;
-                top: 58.13%;
-                bottom: 37.28%;
+                position: relative;
+                bottom: 0px;
+
+                .home-ctn {
+                    position: relative;
+                    bottom: 0px;
+                }
             }
 
-            .btn-ctn {
-                text-decoration: none;
-                font-family: $tipografiaPrimaria;
+            .btn-contact {
+                font-family: "Montserrat", sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 16px;
@@ -286,19 +279,14 @@
                 flex: none;
                 order: 0;
                 flex-grow: 0;
-                margin: 30px auto;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
                 padding: 16px 24px;
-                gap: 5px;
-                position: relative;
                 width: 92%;
+                gap: 5px;
                 height: 52px;
                 background: linear-gradient(87.34deg, #fc466b 0%, #3f5efb 100%);
                 border-radius: 8px;
             }
+
         }
 
         /* formulario mobile */
