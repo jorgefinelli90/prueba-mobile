@@ -1747,6 +1747,9 @@ footer .down-footer .rrss a {
     padding-top: 10px;
     background-size: cover;
   }
+  #portada .copete-tittle {
+    padding-top: 87px;
+  }
   #portada .copete-tittle h1 {
     margin-bottom: 0px;
     font-family: "Montserrat", sans-serif;
