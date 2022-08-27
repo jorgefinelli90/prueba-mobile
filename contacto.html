@@ -121,8 +121,18 @@
             </div>
     </footer>
     <!-- script iconify --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <script src="./assets/js/index.js"></script>
+    
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
     <script src="./assets/js/nav.js"></script>
 </body>
 </html>

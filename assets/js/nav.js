@@ -3,5 +3,4 @@ $('.navTrigger').click(function () {
     $("#mainListDiv").toggleClass("show_list");
     $("#btn-mob").toggleClass("btn-mob-active");
     $("#mainListDiv").fadeIn();
-
 });
