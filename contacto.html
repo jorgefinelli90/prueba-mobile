@@ -13,6 +13,7 @@
 <body class="body-contact">
     <!-- nav responsive -->
     <header>
+        <div class="top-bar-gradient"></div>
         <nav class="nav">
             <div class="container">
                 <div class="logo">
@@ -40,42 +41,43 @@
         </nav>
     </header>
     <!-- portada -->
-    
-    <main class="contacto-body">
+    <section class="contacto">
+        <main class="contacto-body">
         
-        <div class="vector-bg ">
-            <div class="tittle-contact">
-                <h1>
-                    ¿Tenés un proyecto en mente?
-                </h1>
+            <div class="vector-bg ">
+                <div class="tittle-contact">
+                    <h1>
+                        ¿Tenés un proyecto en mente?
+                    </h1>
+                </div>
+                <form action="">
+                    <div class="form-c-resp">
+                        <div class="form-c">
+                            <label for="nombre">Nombre</label>
+                            <input class="input-c" type="text" placeholder="">
+                        </div>
+                        <div class="form-c">
+                            <label for="email">Email</label>
+                            <input class="input-c form-mail" type="email" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-c">
+                        <label for="nombre">Nombre de la empresa (Opcional)</label>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div id="container-message" class="form-c message">
+                        <label for="message">Mensaje</label>
+                        <div class="focustest" id="message-text" contenteditable="true" type="message" placeholder=""></div>
+                    </div>
+                    <div class="button-contact ctn">
+                        <a href="./contacto-ok.html" class=btn-contact>
+                            <p id="btn-ctn"> Enviar</p>
+                        </a>
+                    </div>
+                </form>
             </div>
-            <form action="">
-                <div class="form-c-resp">
-                    <div class="form-c">
-                        <label for="nombre">Nombre</label>
-                        <input class="input-c" type="text" placeholder="">
-                    </div>
-                    <div class="form-c">
-                        <label for="email">Email</label>
-                        <input class="input-c" type="email" placeholder="">
-                    </div>
-                </div>
-                <div class="form-c">
-                    <label for="nombre">Nombre de la empresa (Opcional)</label>
-                    <input type="text" placeholder="">
-                </div>
-                <div id="container-message" class="form-c message">
-                    <label for="message">Mensaje</label>
-                    <div class="focustest" id="message-text" contenteditable="true" type="message" placeholder=""></div>
-                </div>
-                <div class="button-contact ctn">
-                    <a href="./contacto-ok.html" class=btn-contact>
-                        <p> Enviar</p>
-                    </a>
-                </div>
-            </form>
-        </div>
-    </main>
+        </main>
+    </section>
     <footer>
         <div class="footer-up">
             <div class="legales">
