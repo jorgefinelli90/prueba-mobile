@@ -519,6 +519,8 @@
       margin-right: 20px;
       margin-left: 50px;
 
+      
+
       svg {
         width: 32px;
         height: 32px;
@@ -526,6 +528,47 @@
         margin: 8px;
       }
     }
+
+    .flecha-empresas:hover {
+      display: block;
+      background-color:$blancoTitulos ;
+      border-radius: 50px;
+      width: 50px;
+      height: 50px;
+      margin-top: 90px;
+      margin-right: 20px;
+      margin-left: 50px;
+
+      
+
+      svg {
+        width: 32px;
+        height: 32px;
+        color:$backgroundDark ;
+        margin: 8px;
+      }
+    }
+
+    .flecha-active {
+      display: block;
+      background-color:$blancoTitulos ;
+      border-radius: 50px;
+      width: 50px;
+      height: 50px;
+      margin-top: 90px;
+      margin-right: 20px;
+      margin-left: 50px;
+      transform: rotate(179deg);
+
+      svg {
+        width: 32px;
+        height: 32px;
+        color:$backgroundDark ;
+        margin: 8px;
+      }
+    }
+
+
   }
 }
 

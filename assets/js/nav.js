@@ -6,7 +6,7 @@ $('.navTrigger').click(function () {
 });
 
 $('.flecha-empresas').click(function () {
-    $(this).toggleClass('activo');
+    $(this).toggleClass('flecha-active');
     $("#empresa1").toggleClass("prueba");
 });
 $('.flecha-empresas').click(function () {

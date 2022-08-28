@@ -222,7 +222,7 @@
     }
 
     .contacto-body {
-        height: 800px;
+        height: auto;
         display: flex;
 
         /* CONTACTO-OK */
@@ -300,8 +300,32 @@
             display: flex;
             flex-direction: column;
 
+            form{
+                #container-message{
+                        display: inline-flex;
+                        width: 100%;
+                        min-height: 48px;
+                    #message-text{
+                        padding: 13px;
+                        background-color: transparent;
+                        width: 92%;
+                        margin: 8px 16px;
+                        border: 2px solid #d0d0d0;
+                        border-radius: 8px;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #D0D0D0;
+                    }
+                    
+                }
+            }
+
             .tittle-contact {
                 padding-top: 100px;
+                
                 h1 {
                     width: 265px;
                     height: 64px;
@@ -361,12 +385,28 @@
                 margin: 40px auto;
                 padding: 16px 24px;
                 gap: 5px;
-                position: relative;
+                position: unset;
                 width: 92%;
                 height: 52px;
                 background: linear-gradient(87.34deg, #fc466b 0%, #3f5efb 100%);
                 border-radius: 8px;
             }
+            .btn-contact p {
+                color: white;
+                position: unset;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: center;
+                color: #d0d0d0;
+                text-decoration: none;
+            }
+
+
+
+
 
             .form-c-resp {
                 display: flex;

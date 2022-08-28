@@ -177,6 +177,125 @@
                 color: #1d1d1d;
             }
         }
+        #clientes-section {
+            margin-left: 0;
+            width: 100%;
+
+            .clientes-carrousel {
+                margin-left: 0;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                #empresa2 {
+                display: block !important;
+                margin: 10px;
+                width: 156px;
+                height: 180px;
+                background-color: #1D1D1D;
+                border-radius: 8px;
+                .logo-emp {
+                    height: 90px;
+                
+                    img {
+                      padding-top: 40px;
+                      margin-left: auto;
+                      margin-right: auto;
+                      display: block;
+                    }
+              }
+                  h4 {
+                    font-family: $tipografiaPrimaria;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #ffffff;
+                    margin: 25px 0 0 0;
+                    padding: 0;
+                  }
+              
+                  h5 {
+                    font-family: $tipografiaPrimaria;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 18px;
+                    text-align: center;
+                    color: $grisTextos;
+                    margin: 8px 0 0 0;
+                    padding: 0;
+                  }
+                }
+            }
+            
+
+            .empresa {
+                margin: 10px;
+                width: 156px;
+                height: 180px;
+                background-color: $backgroundDark;
+                border-radius: 8px;
+
+                .logo-emp {
+                    height: 90px;
+
+                    img {
+                        height: 80px;
+                        width: 130px;
+                        padding-top: 40px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        display: block;
+                    }
+                }
+
+                h4 {
+                    font-family: $tipografiaPrimaria;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 16px;
+                    text-align: center;
+                    color: #ffffff;
+                    margin: 25px 0 0 0;
+                    padding: 0;
+                }
+
+                h5 {
+                    font-family: $tipografiaPrimaria;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 18px;
+                    text-align: center;
+                    color: $grisTextos;
+                    margin: 8px 0 0 0;
+                    padding: 0;
+                }
+            }
+
+            .flecha-empresas {
+                display: none;
+                background-color: $backgroundDark;
+                border-radius: 50px;
+                width: 50px;
+                height: 50px;
+                margin-top: 90px;
+                margin-right: 20px;
+                margin-left: 50px;
+
+                svg {
+                    width: 32px;
+                    height: 32px;
+                    color: $blancoTitulos;
+                    margin: 8px;
+                }
+            }
+            .prueba{
+                display: block;
+            }
+        }
     }
 
     .cont {
@@ -550,13 +669,56 @@
             width: 100%;
 
             .clientes-carrousel {
+                margin-left: 0;
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
+                #empresa2 {
+                display: block !important;
+                margin: 10px;
+                width: 156px;
+                height: 180px;
+                background-color: #1D1D1D;
+                border-radius: 8px;
+                .logo-emp {
+                    height: 90px;
+                
+                    img {
+                      padding-top: 40px;
+                      margin-left: auto;
+                      margin-right: auto;
+                      display: block;
+                    }
+              }
+                  h4 {
+                    font-family: $tipografiaPrimaria;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #ffffff;
+                    margin: 25px 0 0 0;
+                    padding: 0;
+                  }
+              
+                  h5 {
+                    font-family: $tipografiaPrimaria;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 18px;
+                    text-align: center;
+                    color: $grisTextos;
+                    margin: 8px 0 0 0;
+                    padding: 0;
+                  }
+                }
             }
+            
 
             .empresa {
-                margin: 7px 7px;
+                margin: 10px;
                 width: 156px;
                 height: 180px;
                 background-color: $backgroundDark;
