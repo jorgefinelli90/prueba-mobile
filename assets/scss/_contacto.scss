@@ -227,9 +227,13 @@
 
         /* CONTACTO-OK */
         #contact-ok {
+            height: 640px;
+            display: flex;
+            justify-content: none;
             h1 {
-                position: relative;
-                bottom: 10px;
+                margin-top: 20px;
+                margin-bottom: 0px;
+                height: auto;
                 width: 90%;
                 font-family: "Montserrat";
                 font-style: normal;
@@ -241,16 +245,13 @@
             }
 
             svg {
+                margin-top: 140px;
                 width: 56px;
                 height: 56px;
                 color: #ffffff;
-                position: relative;
-                bottom: 10px;
             }
 
             p {
-                position: relative;
-                bottom: 70px;
                 font-family: "Montserrat";
                 font-style: normal;
                 font-weight: 400;
@@ -271,11 +272,6 @@
             }
 
             .btn-contact {
-                font-family: "Montserrat", sans-serif;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 20px;
                 text-align: center;
                 color: #ffffff;
                 flex: none;
@@ -287,6 +283,20 @@
                 height: 52px;
                 background: linear-gradient(87.34deg, #fc466b 0%, #3f5efb 100%);
                 border-radius: 8px;
+                margin-top: 180px;
+                margin-bottom: 35px;
+            }
+            .btn-contact p {
+                color: white;
+                position: unset;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: center;
+                color: #d0d0d0;
+                text-decoration: none;
             }
 
         }
@@ -358,6 +368,14 @@
                 border-radius: 8px;
                 height: 48px;
                 width: 92%;
+                padding: 13px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                color: #D0D0D0;
+                padding: 13px;
             }
 
             input:focus {
