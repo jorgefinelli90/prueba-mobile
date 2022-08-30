@@ -133,8 +133,8 @@
         border: 1px solid $azul;
     }
 
-    /* prueba */
-    .prueba {
+    /* inactive */
+    .inactive {
         display: block;
     }
 
@@ -292,7 +292,7 @@
                     margin: 8px;
                 }
             }
-            .prueba{
+            .inactive{
                 display: block;
             }
         }
@@ -779,7 +779,7 @@
                     margin: 8px;
                 }
             }
-            .prueba{
+            .inactive{
                 display: block;
             }
         }
@@ -965,6 +965,6 @@
     }
 }
 
-.prueba {
+.inactive {
     display: block;
 }

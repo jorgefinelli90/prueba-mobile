@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  
 }
 
 html {
@@ -132,7 +131,7 @@ body {
 
 
 
-/* Media qurey section */
+/* Media section */
 
 @media screen and (min-width: 768px) {
   .container {
@@ -252,8 +251,11 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: #1D1D1D;
-    background-position: center top;
+    background-color: $backgroundDark;
+    background-image: url(../img/vector-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
   }
 
   .nav div.main_list ul li {
@@ -290,11 +292,7 @@ body {
       }
     }
 }
-
-
-/* Animation */
-/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
-
+/* Animacion */
 .navTrigger {
   cursor: pointer;
   width: 30px;
@@ -305,7 +303,6 @@ body {
   top: 0;
   bottom: 0;
 }
-
 .navTrigger i {
   background-color: #DADADA;
   content: '';
@@ -313,14 +310,12 @@ body {
   width: 18px;
   height: 2px;
 }
-
 .navTrigger i:nth-child(1) {
   -webkit-animation: outT 0.8s backwards;
   animation: outT 0.8s backwards;
   -webkit-animation-direction: reverse;
   animation-direction: reverse;
 }
-
 .navTrigger i:nth-child(2) {
   margin: 7px 0;
   -webkit-animation: outM 0.8s backwards;
@@ -328,14 +323,12 @@ body {
   -webkit-animation-direction: reverse;
   animation-direction: reverse;
 }
-
 .navTrigger i:nth-child(3) {
   -webkit-animation: outBtm 0.8s backwards;
   animation: outBtm 0.8s backwards;
   -webkit-animation-direction: reverse;
   animation-direction: reverse;
 }
-
 .navTrigger.active i:nth-child(1) {
   -webkit-animation: inT 0.8s forwards;
   animation: inT 0.8s forwards;
@@ -504,8 +497,7 @@ body {
 }
 
 .affix {
-  margin-top: 5px;
-  padding: 5px;
+  margin: 5px 0px 0px 0px;
   background-color: #1D1D1D;
 }
 

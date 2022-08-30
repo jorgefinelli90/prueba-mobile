@@ -131,7 +131,7 @@ body {
   transition: all 0.4s ease;
 }
 
-/* Media qurey section */
+/* Media section */
 @media screen and (min-width: 768px) {
   .container {
     margin: 0;
@@ -237,7 +237,10 @@ body {
     left: 0;
     bottom: 0;
     background-color: #1D1D1D;
-    background-position: center top;
+    background-image: url(../img/vector-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
   }
   .nav div.main_list ul li {
     width: 100%;
@@ -268,8 +271,7 @@ body {
     padding: 0;
   }
 }
-/* Animation */
-/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+/* Animacion */
 .navTrigger {
   cursor: pointer;
   width: 30px;
@@ -447,7 +449,7 @@ body {
   }
 }
 .affix {
-  padding: 0;
+  margin: 5px 0px 0px 0px;
   background-color: #1D1D1D;
 }
 
@@ -834,7 +836,7 @@ body {
   flex-wrap: wrap;
   margin-left: 7vw;
 }
-#clientes #clientes-section .prueba {
+#clientes #clientes-section .inactive {
   display: none;
 }
 #clientes #clientes-section .empresas {
@@ -930,6 +932,39 @@ body {
   color: #FFFFFF;
   margin: 8px;
 }
+#clientes #clientes-section .flecha-empresas:hover {
+  display: block;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin-top: 90px;
+  margin-right: 20px;
+  margin-left: 50px;
+}
+#clientes #clientes-section .flecha-empresas:hover svg {
+  width: 32px;
+  height: 32px;
+  color: #1D1D1D;
+  margin: 8px;
+}
+#clientes #clientes-section .flecha-active {
+  display: block;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin-top: 90px;
+  margin-right: 20px;
+  margin-left: 50px;
+  transform: rotate(179deg);
+}
+#clientes #clientes-section .flecha-active svg {
+  width: 32px;
+  height: 32px;
+  color: #1D1D1D;
+  margin: 8px;
+}
 
 .cont {
   margin-top: 45px;
@@ -1022,7 +1057,7 @@ body {
 
 /* sticky  */
 /* --------------------------------- */
-.prueba {
+.inactive {
   display: none;
 }
 
@@ -1127,17 +1162,72 @@ footer .down-footer .rrss a {
 
 /* imports Pagina Contacto */
 /* desktop */
-.contacto-body {
+.top-bar-gradient {
+  position: fixed;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(87.34deg, #fc466b 0%, #3f5efb 100%);
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+.contacto .contacto-body {
   padding-top: 30px;
   background: #1D1D1D;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-.contacto-body .vector-bg {
+.contacto .contacto-body .vector-bg {
   width: 1097px;
-  height: 640px;
+  height: auto;
 }
-.contacto-body .vector-bg h1 {
+.contacto .contacto-body .vector-bg form #container-message {
+  display: inline-flex;
+  width: 100%;
+  min-height: 48px;
+}
+.contacto .contacto-body .vector-bg form #container-message #message-text {
+  padding: 13px;
+  background-color: transparent;
+  width: 662px;
+  margin: 8px 16px;
+  border: 2px solid #d0d0d0;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #D0D0D0;
+}
+.contacto .contacto-body .vector-bg form #container-message #message-text:focus {
+  padding: 13px;
+  background-color: transparent;
+  width: 662px;
+  margin: 8px 16px;
+  outline: none !important;
+  border: 2px solid #5F79FF;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #D0D0D0;
+}
+.contacto .contacto-body .vector-bg form .form-mail {
+  width: 318px !important;
+  height: 48px;
+}
+.contacto .contacto-body .vector-bg h1 {
   margin: 20px;
   width: 538px;
   height: 112px;
@@ -1148,15 +1238,15 @@ footer .down-footer .rrss a {
   line-height: 56px;
   color: #FFFFFF;
 }
-.contacto-body .vector-bg .form-c {
+.contacto .contacto-body .vector-bg .form-c {
   display: flex;
   flex-direction: column;
 }
-.contacto-body .vector-bg .form-c-resp {
+.contacto .contacto-body .vector-bg .form-c-resp {
   display: flex;
   flex-wrap: wrap;
 }
-.contacto-body .vector-bg .form-c-resp label {
+.contacto .contacto-body .vector-bg .form-c-resp label {
   margin-left: 20px;
   font-family: "Montserrat";
   font-style: normal;
@@ -1165,17 +1255,17 @@ footer .down-footer .rrss a {
   line-height: 15px;
   color: #FFFFFF;
 }
-.contacto-body .vector-bg .form-c-resp input {
-  width: 320px;
+.contacto .contacto-body .vector-bg .form-c-resp input {
+  width: 321px;
   height: 48px;
   border: 2px solid #D0D0D0;
   border-radius: 8px;
   margin-bottom: 20px;
 }
-.contacto-body .vector-bg .form-c-resp .input-c {
+.contacto .contacto-body .vector-bg .form-c-resp .input-c {
   margin: 0px 0px 20px 20px;
 }
-.contacto-body .vector-bg label {
+.contacto .contacto-body .vector-bg label {
   margin-bottom: 5px;
   margin-left: 20px;
   font-family: "Montserrat";
@@ -1185,7 +1275,7 @@ footer .down-footer .rrss a {
   line-height: 15px;
   color: #FFFFFF;
 }
-.contacto-body .vector-bg input {
+.contacto .contacto-body .vector-bg input {
   color: white;
   margin: 0 20px;
   margin-bottom: 20px;
@@ -1195,7 +1285,7 @@ footer .down-footer .rrss a {
   border-radius: 8px;
   background: transparent;
 }
-.contacto-body .vector-bg input:focus {
+.contacto .contacto-body .vector-bg input:focus {
   border: none;
   color: white;
   margin: 0 20px;
@@ -1206,7 +1296,7 @@ footer .down-footer .rrss a {
   border: 2px solid #5F79FF;
   border-radius: 8px;
 }
-.contacto-body .vector-bg .btn-contact {
+.contacto .contacto-body .vector-bg .btn-contact {
   box-sizing: border-box;
   background: linear-gradient(87.34deg, #fc466b 0%, #3f5efb 100%);
   display: flex;
@@ -1219,18 +1309,10 @@ footer .down-footer .rrss a {
   flex: none;
   order: 3;
   flex-grow: 0;
-  margin: 10px 20px;
+  margin: 30px 0px 42px 17px;
 }
-.contacto-body .vector-bg .btn-contact:before {
-  border: 1px solid #252525;
-  background: #252525;
-  border-radius: 6px;
-  width: 149px;
-  height: 48px;
-}
-.contacto-body .vector-bg .btn-contact p {
+.contacto .contacto-body .vector-bg .btn-contact #btn-ctn {
   color: white;
-  position: absolute;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -1241,11 +1323,18 @@ footer .down-footer .rrss a {
   color: #d0d0d0;
   text-decoration: none;
 }
+.contacto .contacto-body .vector-bg .btn-contact:before {
+  border: 1px solid #252525;
+  background: #252525;
+  border-radius: 6px;
+  width: 149px;
+  height: 48px;
+}
 
 .contacto-body::before {
   filter: blur(75px);
   border-radius: 177px 87px 170px 73px;
-  content: "";
+  /* content: ""; */
   position: relative;
   left: 1129px;
   top: 148px;
@@ -1258,7 +1347,7 @@ footer .down-footer .rrss a {
 
 /* contacto-ok  desktop */
 .body-contact {
-  background: #090909;
+  background: #1d1d1d;
 }
 
 .contacto-body {
@@ -1269,18 +1358,20 @@ footer .down-footer .rrss a {
 }
 .contacto-body #contact-ok {
   display: flex;
-  align-content: center;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 1097px;
+  flex-direction: column;
+  width: 100%;
 }
 .contacto-body #contact-ok svg {
+  margin-top: 100px;
   width: 70px;
   height: 70px;
   color: #FFFFFF;
 }
 .contacto-body #contact-ok h1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -1301,6 +1392,9 @@ footer .down-footer .rrss a {
 
 /* mobile */
 @media (max-width: 420px) {
+  .top-bar-gradient {
+    display: none;
+  }
   .body-contact {
     background: #090909;
   }
@@ -1321,15 +1415,21 @@ footer .down-footer .rrss a {
     mix-blend-mode: normal;
     opacity: 0.87;
   }
-  .contacto-body {
-    height: 800px;
+  .contacto .contacto-body {
+    height: auto;
     display: flex;
     /* CONTACTO-OK */
     /* formulario mobile */
   }
-  .contacto-body #contact-ok h1 {
-    position: relative;
-    bottom: 10px;
+  .contacto .contacto-body #contact-ok {
+    height: 640px;
+    display: flex;
+    justify-content: none;
+  }
+  .contacto .contacto-body #contact-ok h1 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    height: auto;
     width: 90%;
     font-family: "Montserrat";
     font-style: normal;
@@ -1339,16 +1439,13 @@ footer .down-footer .rrss a {
     text-align: center;
     color: #ffffff;
   }
-  .contacto-body #contact-ok svg {
+  .contacto .contacto-body #contact-ok svg {
+    margin-top: 140px;
     width: 56px;
     height: 56px;
     color: #ffffff;
-    position: relative;
-    bottom: 10px;
   }
-  .contacto-body #contact-ok p {
-    position: relative;
-    bottom: 70px;
+  .contacto .contacto-body #contact-ok p {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
@@ -1357,20 +1454,16 @@ footer .down-footer .rrss a {
     text-align: center;
     color: #d0d0d0;
   }
-  .contacto-body #contact-ok a {
+  .contacto .contacto-body #contact-ok a {
     position: relative;
     bottom: 0px;
   }
-  .contacto-body #contact-ok a .home-ctn {
+  .contacto .contacto-body #contact-ok a .home-ctn {
     position: relative;
     bottom: 0px;
   }
-  .contacto-body #contact-ok .btn-contact {
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
+  .contacto .contacto-body #contact-ok .btn-contact {
+    position: unset;
     text-align: center;
     color: #ffffff;
     flex: none;
@@ -1382,8 +1475,22 @@ footer .down-footer .rrss a {
     height: 52px;
     background: linear-gradient(87.34deg, #fc466b 0%, #3f5efb 100%);
     border-radius: 8px;
+    margin-top: 180px;
+    margin-bottom: 35px;
   }
-  .contacto-body .vector-bg {
+  .contacto .contacto-body #contact-ok .btn-contact p {
+    color: white;
+    position: unset;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #d0d0d0;
+    text-decoration: none;
+  }
+  .contacto .contacto-body .vector-bg {
     background-image: url(../img/vector-mobile-contacto.svg);
     background-size: cover;
     width: 100%;
@@ -1391,10 +1498,44 @@ footer .down-footer .rrss a {
     display: flex;
     flex-direction: column;
   }
-  .contacto-body .vector-bg .tittle-contact {
+  .contacto .contacto-body .vector-bg form #container-message {
+    display: inline-flex;
+    width: 100%;
+    min-height: 48px;
+  }
+  .contacto .contacto-body .vector-bg form #container-message #message-text {
+    padding: 13px;
+    background-color: transparent;
+    width: 92%;
+    margin: 8px 16px;
+    border: 2px solid #d0d0d0;
+    border-radius: 8px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #D0D0D0;
+  }
+  .contacto .contacto-body .vector-bg form #container-message #message-text:focus {
+    padding: 13px;
+    background-color: transparent;
+    width: 92%;
+    margin: 8px 16px;
+    outline: none !important;
+    border: 2px solid #5F79FF;
+    border-radius: 8px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #D0D0D0;
+  }
+  .contacto .contacto-body .vector-bg .tittle-contact {
     padding-top: 100px;
   }
-  .contacto-body .vector-bg .tittle-contact h1 {
+  .contacto .contacto-body .vector-bg .tittle-contact h1 {
     width: 265px;
     height: 64px;
     margin: 50px auto 0px auto;
@@ -1406,7 +1547,7 @@ footer .down-footer .rrss a {
     text-align: center;
     color: #ffffff;
   }
-  .contacto-body .vector-bg label {
+  .contacto .contacto-body .vector-bg label {
     font-family: "Montserrat", sans-serif;
     margin: 20px 8px 0px 20px;
     font-style: normal;
@@ -1415,24 +1556,32 @@ footer .down-footer .rrss a {
     line-height: 15px;
     color: #ffffff;
   }
-  .contacto-body .vector-bg input {
+  .contacto .contacto-body .vector-bg input {
     margin: 8px 16px;
     background-color: transparent;
     border: 2px solid #d0d0d0;
     border-radius: 8px;
     height: 48px;
     width: 92%;
+    padding: 13px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #D0D0D0;
+    padding: 13px;
   }
-  .contacto-body .vector-bg input:focus {
+  .contacto .contacto-body .vector-bg input:focus {
     margin: 8px 16px;
     background-color: transparent;
     outline: none !important;
     border: 2px solid #5F79FF;
   }
-  .contacto-body .vector-bg a {
+  .contacto .contacto-body .vector-bg a {
     text-decoration: none;
   }
-  .contacto-body .vector-bg .btn-contact {
+  .contacto .contacto-body .vector-bg .btn-contact {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -1446,22 +1595,34 @@ footer .down-footer .rrss a {
     margin: 40px auto;
     padding: 16px 24px;
     gap: 5px;
-    position: relative;
+    position: unset;
     width: 92%;
     height: 52px;
     background: linear-gradient(87.34deg, #fc466b 0%, #3f5efb 100%);
     border-radius: 8px;
   }
-  .contacto-body .vector-bg .form-c-resp {
+  .contacto .contacto-body .vector-bg .btn-contact p {
+    color: white;
+    position: unset;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #d0d0d0;
+    text-decoration: none;
+  }
+  .contacto .contacto-body .vector-bg .form-c-resp {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .contacto-body .vector-bg .form-c-resp .form-c {
+  .contacto .contacto-body .vector-bg .form-c-resp .form-c {
     display: flex;
     flex-direction: column;
   }
-  .contacto-body .vector-bg .form-c-resp .form-c label {
+  .contacto .contacto-body .vector-bg .form-c-resp .form-c label {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -1469,24 +1630,31 @@ footer .down-footer .rrss a {
     line-height: 15px;
     color: #FFFFFF;
   }
-  .contacto-body .vector-bg .form-c-resp .form-c input {
+  .contacto .contacto-body .vector-bg .form-c-resp .form-c .form-mail {
     max-width: 410px;
     margin: 8px 16px;
     height: 48px;
     border: 2px solid #D0D0D0;
     border-radius: 8px;
   }
-  .contacto-body .vector-bg .form-c-resp .form-c input:focus {
+  .contacto .contacto-body .vector-bg .form-c-resp .form-c input {
+    max-width: 410px;
+    margin: 8px 16px;
+    height: 48px;
+    border: 2px solid #D0D0D0;
+    border-radius: 8px;
+  }
+  .contacto .contacto-body .vector-bg .form-c-resp .form-c input:focus {
     margin: 8px 16px;
     background-color: transparent;
     outline: none !important;
     border: 2px solid #5F79FF;
   }
-  .contacto-body .vector-bg .form-c-resp {
+  .contacto .contacto-body .vector-bg .form-c-resp {
     display: flex;
     flex-wrap: wrap;
   }
-  .contacto-body .vector-bg .form-c-resp label {
+  .contacto .contacto-body .vector-bg .form-c-resp label {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -1494,14 +1662,14 @@ footer .down-footer .rrss a {
     line-height: 15px;
     color: #FFFFFF;
   }
-  .contacto-body .vector-bg .form-c-resp input {
+  .contacto .contacto-body .vector-bg .form-c-resp input {
     width: 92%;
     margin: 8px 16px;
     height: 48px;
     border: 2px solid #D0D0D0;
     border-radius: 8px;
   }
-  .contacto-body .vector-bg .form-c-resp .input-c {
+  .contacto .contacto-body .vector-bg .form-c-resp .input-c {
     margin: 0px 0px 20px 20px;
   }
   .contacto-body::before {
@@ -1622,8 +1790,8 @@ footer .down-footer .rrss a {
 #section-2 .tarj-section .div-s-largo {
     border: 1px solid #5F79FF;
   }
-  /* prueba */
-  .prueba {
+  /* inactive */
+  .inactive {
     display: block;
   }
   .flecha-empresas {
@@ -1655,6 +1823,114 @@ footer .down-footer .rrss a {
     font-size: 30px;
     line-height: 56px;
     color: #1d1d1d;
+  }
+  #clientes #clientes-section {
+    margin-left: 0;
+    width: 100%;
+  }
+  #clientes #clientes-section .clientes-carrousel {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #clientes #clientes-section .clientes-carrousel #empresa2 {
+    display: block !important;
+    margin: 10px;
+    width: 156px;
+    height: 180px;
+    background-color: #1D1D1D;
+    border-radius: 8px;
+  }
+  #clientes #clientes-section .clientes-carrousel #empresa2 .logo-emp {
+    height: 90px;
+  }
+  #clientes #clientes-section .clientes-carrousel #empresa2 .logo-emp img {
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  #clientes #clientes-section .clientes-carrousel #empresa2 h4 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    margin: 25px 0 0 0;
+    padding: 0;
+  }
+  #clientes #clientes-section .clientes-carrousel #empresa2 h5 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #D0D0D0;
+    margin: 8px 0 0 0;
+    padding: 0;
+  }
+  #clientes #clientes-section .empresa {
+    margin: 10px;
+    width: 156px;
+    height: 180px;
+    background-color: #1D1D1D;
+    border-radius: 8px;
+  }
+  #clientes #clientes-section .empresa .logo-emp {
+    height: 90px;
+  }
+  #clientes #clientes-section .empresa .logo-emp img {
+    height: 80px;
+    width: 130px;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  #clientes #clientes-section .empresa h4 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
+    margin: 25px 0 0 0;
+    padding: 0;
+  }
+  #clientes #clientes-section .empresa h5 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #D0D0D0;
+    margin: 8px 0 0 0;
+    padding: 0;
+  }
+  #clientes #clientes-section .flecha-empresas {
+    display: none;
+    background-color: #1D1D1D;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin-top: 90px;
+    margin-right: 20px;
+    margin-left: 50px;
+  }
+  #clientes #clientes-section .flecha-empresas svg {
+    width: 32px;
+    height: 32px;
+    color: #FFFFFF;
+    margin: 8px;
+  }
+  #clientes #clientes-section .inactive {
+    display: block;
   }
   .cont {
     margin-top: 45px;
@@ -1981,12 +2257,52 @@ footer .down-footer .rrss a {
     width: 100%;
   }
   #clientes #clientes-section .clientes-carrousel {
+    margin-left: 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
+  #clientes #clientes-section .clientes-carrousel #empresa2 {
+    display: block !important;
+    margin: 10px;
+    width: 156px;
+    height: 180px;
+    background-color: #1D1D1D;
+    border-radius: 8px;
+  }
+  #clientes #clientes-section .clientes-carrousel #empresa2 .logo-emp {
+    height: 90px;
+  }
+  #clientes #clientes-section .clientes-carrousel #empresa2 .logo-emp img {
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  #clientes #clientes-section .clientes-carrousel #empresa2 h4 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    margin: 25px 0 0 0;
+    padding: 0;
+  }
+  #clientes #clientes-section .clientes-carrousel #empresa2 h5 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #D0D0D0;
+    margin: 8px 0 0 0;
+    padding: 0;
+  }
   #clientes #clientes-section .empresa {
-    margin: 7px 7px;
+    margin: 10px;
     width: 156px;
     height: 180px;
     background-color: #1D1D1D;
@@ -2041,7 +2357,7 @@ footer .down-footer .rrss a {
     color: #FFFFFF;
     margin: 8px;
   }
-  #clientes #clientes-section .prueba {
+  #clientes #clientes-section .inactive {
     display: block;
   }
   /* contacto arriba footer */
@@ -2194,6 +2510,6 @@ footer .down-footer .rrss a {
     margin: 0px 10px;
   }
 }
-.prueba {
+.inactive {
   display: block;
 }/*# sourceMappingURL=styles.css.map */
