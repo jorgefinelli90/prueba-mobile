@@ -8,10 +8,10 @@
 
 .contacto{
     display: flex;
-    justify-content: center;
     flex-direction: row;
     align-content: center;
     align-items: center;
+    margin-left: 14vw;
     .contacto-body {
         padding-top: 30px;
         background: #1D1D1D;
@@ -271,9 +271,11 @@
     }
 
     .contacto{
+        margin-left: 0;
         .contacto-body {
             height: auto;
             display: flex;
+            width: 100%;
     
             /* CONTACTO-OK */
             #contact-ok {
@@ -510,7 +512,7 @@
                             color: #FFFFFF;
                         }
                         .form-mail{
-                            max-width: 410px;
+                            width: 91% !important;
                             margin: 8px 16px;
                             height: 48px;
                             border: 2px solid #D0D0D0;

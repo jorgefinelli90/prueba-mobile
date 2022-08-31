@@ -178,7 +178,11 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  .affix {
+    height: 60px;
+  }
   .nav {
+    height: 60px;
     padding-top: 20px;
     padding-bottom: 20px;
     transition: all 0.4s ease;
@@ -192,7 +196,7 @@ body {
     top: 5px;
     bottom: 0px;
     left: 57vw;
-    margin: 8px 13vw;
+    margin: 8px 9vw;
   }
   .nav .container .btn-contact {
     box-sizing: border-box;
@@ -241,7 +245,7 @@ body {
     height: 31px;
   }
   .navTrigger {
-    display: block;
+    display: block !important;
   }
   .nav div.logo {
     width: 97.17px;
@@ -283,6 +287,60 @@ body {
     width: 100%;
     text-align: left;
   }
+  .nav div.main_list ul li .btn-contact {
+    box-sizing: border-box;
+    background: transparent;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    height: 52px;
+    border-radius: 8px;
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    position: relative;
+  }
+  .nav div.main_list ul li .btn-contact:before {
+    content: "";
+    border: 1px solid transparent;
+    background: transparent;
+    border-radius: 6px;
+    width: 148px;
+    height: 47px;
+  }
+  .nav div.main_list ul li .btn-contact p {
+    background: linear-gradient(87.34deg, #FC466B 0%, #3F5EFB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 21px;
+    margin-left: 15px;
+  }
+  .nav div.main_list ul li .btn-contact:hover::before {
+    content: "";
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+  }
+  .nav div.main_list ul li .text-g {
+    background: linear-gradient(87.34deg, #FC466B 0%, #3F5EFB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 21px;
+  }
   .nav div.main_list ul li a {
     text-align: center;
     width: 100%;
@@ -293,13 +351,6 @@ body {
     font-size: 21px;
     line-height: 21px;
     color: #FFFFFF;
-  }
-  .text-g {
-    background: linear-gradient(87.34deg, #FC466B 0%, #3F5EFB 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
   }
   .nav div.media_button {
     display: block;
@@ -317,7 +368,7 @@ body {
   position: absolute;
   left: 30px;
   top: 0;
-  bottom: 0;
+  bottom: -5px;
 }
 
 .navTrigger i {
@@ -541,6 +592,7 @@ body {
 #portada {
   background-color: #1D1D1D;
   padding-top: 80px;
+  height: auto;
 }
 #portada .flecha-abajo {
   padding-top: 60px;
@@ -1092,12 +1144,15 @@ body {
   height: 45px;
 }
 
-/* sticky  */
-/* --------------------------------- */
 .inactive {
   display: none;
 }
 
+@media screen and (min-width: 900px) {
+  #portada .flecha-arriba svg {
+    color: #1d1d1d;
+  }
+}
 footer .footer-up {
   background-color: #090909;
   display: flex;
@@ -1208,10 +1263,10 @@ footer .down-footer .rrss a {
 
 .contacto {
   display: flex;
-  justify-content: center;
   flex-direction: row;
   align-content: center;
   align-items: center;
+  margin-left: 14vw;
 }
 .contacto .contacto-body {
   padding-top: 30px;
@@ -1221,6 +1276,7 @@ footer .down-footer .rrss a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  background: transparent;
 }
 .contacto .contacto-body .vector-bg {
   width: 1097px;
@@ -1453,9 +1509,13 @@ footer .down-footer .rrss a {
     mix-blend-mode: normal;
     opacity: 0.87;
   }
+  .contacto {
+    margin-left: 0;
+  }
   .contacto .contacto-body {
     height: auto;
     display: flex;
+    width: 100%;
     /* CONTACTO-OK */
     /* formulario mobile */
   }
@@ -1669,7 +1729,7 @@ footer .down-footer .rrss a {
     color: #FFFFFF;
   }
   .contacto .contacto-body .vector-bg .form-c-resp .form-c .form-mail {
-    max-width: 410px;
+    width: 91% !important;
     margin: 8px 16px;
     height: 48px;
     border: 2px solid #D0D0D0;
@@ -1744,7 +1804,7 @@ footer .down-footer .rrss a {
     border-radius: 40px;
   }
   .flecha-arriba svg {
-    color: #FFFFFF;
+    color: #FFF;
     width: 28px;
     height: 28px;
     margin-top: 11px;
