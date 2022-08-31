@@ -182,7 +182,11 @@ body {
 }
 
 @media screen and (max-width:768px) {
+  .affix {
+      height: 60px;
+    }
   .nav {
+    height: 60px;
       padding-top: 20px;
       padding-bottom: 20px;
       -webkit-transition: all 0.4s ease;
@@ -252,8 +256,9 @@ body {
     }
     
   .navTrigger {
-    display: block;
+    display: block !important;
   }
+  
 
   .nav div.logo {
     width: 97.17px;
@@ -300,6 +305,65 @@ body {
   .nav div.main_list ul li {
     width: 100%;
     text-align: left;
+    .btn-contact {
+        box-sizing: border-box;
+        background: transparent;
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 153px;
+        height: 52px;
+        border-radius: 8px;
+        /* Inside auto layout */
+        flex: none;
+        order: 3;
+        flex-grow: 0;
+        position: relative;
+      }
+    
+      .btn-contact:before {
+        content: "";
+        border: 1px solid transparent;
+        background: transparent;
+        border-radius: 6px;
+        width: 148px;
+        height: 47px;
+      }
+    
+      .btn-contact p {
+    
+        background: linear-gradient(87.34deg, #FC466B 0%, #3F5EFB 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 21px;
+          line-height: 21px;
+          margin-left: 15px;
+    
+      }
+    
+      .btn-contact:hover::before {
+        content: "";
+        border: none;
+        background: transparent;
+        border-radius: 8px;
+      }
+    .text-g {
+        background: linear-gradient(87.34deg, #FC466B 0%, #3F5EFB 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 21px;
+          }
   }
 
   .nav div.main_list ul li a {
@@ -313,13 +377,6 @@ body {
       line-height: 21px;
       color: $blancoTitulos;
   }
-    .text-g {
-      background: linear-gradient(87.34deg, #FC466B 0%, #3F5EFB 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
-    }
 
   .nav div.media_button {
     display: block;
@@ -340,7 +397,7 @@ body {
   position: absolute;
   left: 30px;
   top: 0;
-  bottom: 0;
+  bottom: -5px;
 }
 .navTrigger i {
   background-color: #DADADA;

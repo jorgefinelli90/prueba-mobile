@@ -18,11 +18,10 @@
         display: flex;
         justify-content: flex-start;
         width: fit-content;
-    
+        background: transparent;
         .vector-bg {
             width: 1097px;
             height: auto;
-    
             form{
                 #container-message{
                         display: inline-flex;
@@ -63,8 +62,6 @@
                     height: 48px;
                 }
             }
-    
-    
             h1 {
                 margin: 20px;
                 width: 538px;
@@ -76,16 +73,13 @@
                 line-height: 56px;
                 color: #FFFFFF;
             }
-    
             .form-c {
                 display: flex;
                 flex-direction: column;
             }
-    
             .form-c-resp {
                 display: flex;
                 flex-wrap: wrap;
-    
                 label {
                     margin-left: 20px;
                     font-family: 'Montserrat';
@@ -95,7 +89,6 @@
                     line-height: 15px;
                     color: #FFFFFF;
                 }
-    
                 input {
                     width: 321px;
                     height: 48px;
@@ -108,7 +101,6 @@
                     margin: 00px 0px 20px 20px;
                 }
             }
-    
             label {
                 margin-bottom: 5px;
                 margin-left: 20px;
@@ -119,7 +111,6 @@
                 line-height: 15px;
                 color: #FFFFFF;
             }
-    
             input {
                 color: white;
                 margin: 0 20px;
@@ -130,7 +121,6 @@
                 border-radius: 8px;
                 background: transparent;
             }
-    
             input:focus {
                 border: none;
                 color: white;
@@ -142,7 +132,6 @@
                 border: 2px solid #5F79FF;
                 border-radius: 8px;
             }
-    
             .btn-contact {
                 text-decoration: none;
                 box-sizing: border-box;
